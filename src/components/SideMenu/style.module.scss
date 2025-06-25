@@ -1,0 +1,104 @@
+$sidebar-width: 500px;
+$z-index-menu: 1000;
+
+
+@media(max-width: 375px) {
+    .body {
+        width: 250px;
+    }
+}
+
+.hamburger {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 2rem;
+    z-index: $z-index-menu + 2;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+.sidebar {
+    display: flex;
+    align-content: center;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: $sidebar-width;
+    height: 100vh;
+    z-index: $z-index-menu+1;
+
+
+    .body {
+        background-color: #000000;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        z-index: $z-index-menu + 2;
+        border-radius: 1rem;
+        max-height: calc(100vh - 2rem);
+
+
+
+
+        .closeBtn {
+            font-size: 1.5rem;
+            background: none;
+            border: solid 0.1px rgb(112, 112, 112, 0.5);
+            border-top-right-radius: 0;
+            border-top-left-radius: 0;
+            color: white;
+            cursor: pointer;
+            width: 100%;
+            padding: 1rem;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: start;
+            flex-direction: column;
+            align-items: center;
+            width: 420px;
+            padding: 2rem 0rem;
+
+            a {
+                color: white;
+                font-size: 4rem;
+                text-decoration: none;
+                font-weight: 500;
+                transition: color 0.3s ease;
+                padding: 0.2rem 2rem;
+
+
+                &:hover {
+                    color: #000000;
+                    background-color: #ffffff;
+
+                }
+            }
+        }
+
+        .buttonDiv {
+            border: solid rgb(112, 112, 112, 0.5) 0.1px;
+            border-top-right-radius: 0;
+            border-top-left-radius: 0;
+            flex: 1;
+            border-radius: 1rem;
+
+        }
+
+    }
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: $z-index-menu;
+    background: rgba(255, 255, 255, 0.9);
+}

@@ -1,0 +1,58 @@
+.Certifications {
+    .body {
+        display: flex;
+        flex-direction: column;
+        padding: 24px 0px;
+
+        .heading {
+            display: flex;
+            align-items: center;
+            border-bottom: solid 1px rgb(169, 97, 97);
+            padding: 0px 8px;
+
+
+
+            p {
+                flex: 1;
+                text-align: start;
+
+                margin-left: 50px;
+
+                &:nth-child(1) {
+                    margin-left: 0px;
+                }
+
+
+            }
+        }
+
+        .certificate {
+            display: flex;
+            align-items: center;
+            border-bottom: solid 1px gainsboro;
+            padding: 24px 8px;
+
+            .imageContainer {
+                flex: 1;
+                position: relative;
+                width: 400px;
+                height: 250px;
+                aspect-ratio: 1;
+
+
+                .image {
+                    object-fit: cover;
+                    border: solid 1px rgb(234, 234, 234);
+                }
+            }
+
+            p {
+                flex: 1;
+                text-align: start;
+                box-sizing: border-box;
+
+                margin-left: 50px;
+            }
+        }
+    }
+}

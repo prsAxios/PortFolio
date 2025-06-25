@@ -1,0 +1,42 @@
+[
+  {
+    "title": "CLANS Web App",
+    "slug": "clans-web-app",
+    "description": "CLANS is a revolutionary social rewards platform that leverages blockchain technology to create a transparent and decentralized rewards system. Built with Next.js, this web application integrates with the KILT protocol for secure identity verification and credential management. The backend utilizes MongoDB for data storage and Express.js for API routing. The application features real-time Twitter API integration for social proof verification, allowing users to earn rewards for verified social interactions. The platform includes features such as user profiles, reward tracking, social proof verification, and a secure wallet system for managing rewards. The frontend is built with a modern, responsive design using Tailwind CSS and includes interactive charts to visualize user achievements and reward distribution patterns.",
+    "techStack": ["Next.js", "KILT SDK", "MongoDB", "Express", "Twitter API"],
+    "image_1": "/images/img5.png",
+    "image_2": "/images/img5.png"
+  },
+  {
+    "title": "CancAI - Cancer Prediction Tool",
+    "slug": "cancai",
+    "description": "CancAI is an advanced medical diagnostic tool designed to assist healthcare professionals in early cancer detection. This AI-powered platform utilizes machine learning algorithms, specifically Support Vector Machines (SVM), to analyze patient data and predict cancer risk with high accuracy. The application is built with a modern React frontend that provides an intuitive interface for healthcare providers to input patient data and view prediction results. The backend is powered by a Python Flask server that handles data processing and model inference. The system includes features such as patient data management, prediction result visualization, and integration with medical databases. The machine learning model is trained on a comprehensive dataset of medical records and utilizes feature engineering techniques to improve prediction accuracy. The application also includes a confidence scoring system to help doctors interpret the results and make informed decisions.",
+    "techStack": ["React", "Python Flask", "SVM", "Scikit-learn"],
+    "image_1": "/images/img6.png",
+    "image_2":"/images/img6.png"
+    },
+  {
+    "title": "DecentraPay - Crypto Payment Gateway",
+    "slug": "decentrapay",
+    "description": "DecentraPay is a cutting-edge decentralized payment gateway that enables seamless cryptocurrency transactions for businesses and individuals. Built with React, this platform supports multiple blockchain networks including Ethereum and Polygon (MATIC). The application features a secure wallet connection system that allows users to connect their cryptocurrency wallets using MetaMask or other compatible wallet providers. The payment gateway includes real-time transaction verification, multi-currency support, and a user-friendly interface for managing payments. The backend utilizes Web3.js for blockchain interactions and includes smart contracts written in Solidity to handle payment processing. The system also features transaction monitoring, rate conversion, and security measures to protect user funds. The application is designed with scalability in mind, allowing for easy integration with e-commerce platforms and other payment systems.",
+    "techStack": ["React", "Web3.js", "Solidity", "Polygon", "Metamask"],
+    "image_1": "/images/img7.png",
+    "image_2": "/images/img7.png"
+  },
+  {
+    "title": "Crime Data Visualization Dashboard",
+    "slug": "crime-dashboard",
+    "description": "The Crime Data Visualization Dashboard is an interactive platform that provides comprehensive insights into crime patterns across Indian states. Built with Next.js and powered by D3.js and Chart.js, this dashboard offers a powerful visualization tool for law enforcement agencies and policymakers. The application features real-time data updates, interactive maps showing crime hotspots, and customizable charts that allow users to analyze crime trends over time. The dashboard includes filters for different crime categories, time periods, and geographic regions, making it easy to identify patterns and correlations. The interface is built with Tailwind CSS for a modern, responsive design that works across all devices. The system also includes data export capabilities and customizable report generation features to help stakeholders make informed decisions about crime prevention strategies.",
+    "techStack": ["Next.js", "D3.js", "Chart.js", "Tailwind CSS"],
+    "image_1": "/images/img8.png",
+    "image_2": "/images/img8.png"
+  },
+  {
+    "title": "Portfolio Website (This One!)",
+    "slug": "portfolio-site",
+    "description": "My personal developer portfolio built with Next.js and Sass, showcasing projects, skills, and contact information with smooth animations.",
+    "techStack": ["Next.js", "Sass", "Framer Motion", "TypeScript"],
+    "image_1": "/images/img9.png",
+    "image_2": "/images/img9.png"
+  }
+]
