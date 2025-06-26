@@ -1,5 +1,4 @@
 import style from "./button.module.scss";
-// import Megnatic from "../magnetic";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
@@ -35,7 +34,7 @@ const index = ({ children, backgroundColor = "#455CE9", ...attributes }) => {
     };
 
     return (
-        // <Megnatic>
+       
         <div
             className={style.roundedButton}
             style={{ overflow: "hidden", backgroundColor: "transparent" }}
@@ -54,7 +53,7 @@ const index = ({ children, backgroundColor = "#455CE9", ...attributes }) => {
                 className={style.circle}
             ></div>
         </div>
-        // </Megnatic>
+        
     );
 };
 

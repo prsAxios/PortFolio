@@ -1,52 +1,336 @@
 [
+
   {
-    "title": "CLANS Web App",
-    "slug": "clans-web-app",
-    "description": "CLANS is a revolutionary social rewards platform that leverages blockchain technology to create a transparent and decentralized rewards system. Built with Next.js, this web application integrates with the KILT protocol for secure identity verification and credential management. The backend utilizes MongoDB for data storage and Express.js for API routing. The application features real-time Twitter API integration for social proof verification, allowing users to earn rewards for verified social interactions. The platform includes features such as user profiles, reward tracking, social proof verification, and a secure wallet system for managing rewards. The frontend is built with a modern, responsive design using Tailwind CSS and includes interactive charts to visualize user achievements and reward distribution patterns.",
-    "techStack": ["Next.js", "KILT SDK", "MongoDB", "Express", "Twitter API"],
-    "image_1": "/images/img5.png",
-    "image_2": "/images/img5.png",
-    "github": "https://github.com/prsAxios/CLANS",
-    "live": "https://clans-landing-page.vercel.app/"
+    "id": 1,
+    "project_name": "CLANS Web App",
+    "slug":"clans-web-app",
+    "image_1":"/images/projects/clans_1.png",
+    "image_2":"/images/projects/clans_2.png",
+    "image_3":"/images/projects/clans_3.png",
+    "role": "Frontend Developer",
+    "company": "Quadb Tech",
+    "location": "Remote, India",
+    "duration": "Mar 2025 – Jun 2025",
+    "project_type": "Internship",
+    "one_liner": "A decentralized rewards platform that connects Twitter engagement with KILT-powered identity to gamify social influence.",
+    "tech_stack": [
+      "React.js",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "GSAP",
+      "React Context API",
+      "Twitter API",
+      "REST API"
+    ],
+    "challenge": "Traditional identity systems lack decentralization and user control. Social media engagement generates value but is rarely rewarded. CLANS aimed to fix this using decentralized identity and Twitter data.",
+    "solution": "Created a fully responsive web app where users authenticate via Twitter, post content, and earn rewards based on real-time engagement metrics like likes, retweets, and comments.",
+    "responsibilities": [
+      "Developed and shipped the complete frontend using React, Next.js, and Tailwind CSS.",
+      "Implemented protected routes and authentication flow using Twitter OAuth 2.0.",
+      "Integrated REST APIs for fetching engagement metrics and updating the leaderboard.",
+      "Handled routing, navigation guards, and session persistence with Next.js and React hooks.",
+      "Managed global state using React Context API for user sessions and UI state.",
+      "Built interactive UI components with animations using GSAP to enhance UX."
+    ],
+    "highlight_features": [
+      "Twitter OAuth-based authentication system.",
+      "Real-time tweet engagement tracking and leaderboard updates.",
+      "Protected routing and session-based access control.",
+      "Fully responsive UI with smooth transitions and modern animations.",
+      "Scalable global state management using React Context API."
+    ],
+    "tools_used": {
+      "Frontend": ["Next.js", "TypeScript", "Tailwind CSS", "GSAP"],
+      "Auth": ["Twitter API", "OAuth 2.0"],
+      "State Management": ["React Context API"],
+      "API Integrations": ["REST API"]
+    },
+    "outcome": [
+      "Delivered a functional MVP that onboarded 300+ users during pilot.",
+      "Improved frontend performance and reduced UI bugs through clean architecture.",
+      "Helped showcase the potential of merging Web2 engagement with Web3 identity in a real-world use case."
+    ],
+    "keywords": [
+      "React Developer",
+      "Next.js Projects",
+      "OAuth Integration",
+      "Twitter Login",
+      "Protected Routes",
+      "Frontend Internship",
+      "Context API",
+      "GSAP Animations",
+      "Web App UI"
+    ],
+    "links": {
+      "live_demo": "https://clans-landing-page.vercel.app/",
+      "github": "https://github.com/prsAxios/CLANS"
+    }
   },
+
   {
-    "title": "CancAI - Cancer Prediction Tool",
-    "slug": "cancai",
-    "description": "CancAI is an advanced medical diagnostic tool designed to assist healthcare professionals in early cancer detection. This AI-powered platform utilizes machine learning algorithms, specifically Support Vector Machines (SVM), to analyze patient data and predict cancer risk with high accuracy. The application is built with a modern React frontend that provides an intuitive interface for healthcare providers to input patient data and view prediction results. The backend is powered by a Python Flask server that handles data processing and model inference. The system includes features such as patient data management, prediction result visualization, and integration with medical databases. The machine learning model is trained on a comprehensive dataset of medical records and utilizes feature engineering techniques to improve prediction accuracy. The application also includes a confidence scoring system to help doctors interpret the results and make informed decisions.",
-    "techStack": ["React", "Python Flask", "SVM", "Scikit-learn"],
-    "image_1": "/images/img6.png",
-    "image_2": "/images/img6.png",
-    "github": "https://github.com/prsAxios/CancAI",
-    "live": "https://cancai.vercel.app/"
+    "id": 2,
+    "project_name": "GenMol.ai",
+    "slug":"genmol-ai",
+    "image_1":"/images/projects/genmol_1.png",
+    "image_2":"/images/projects/genmol_2.png",
+    "image_3":"/images/projects/genmol_3.png",
+    "role": "Full Stack Developer",
+    "project_type": "Personal Project",
+    "one_liner": "An AI-powered SaaS platform for molecular structure generation, visualization, and real-time collaboration using SMILES notation.",
+    "tech_stack": [
+      "React.js",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Mongoose",
+      "NextAuth",
+      "RDKit.js",
+      "Ably",
+      "JWT",
+      "REST API"
+    ],
+    "challenge": "Scientific molecular research tools often lack collaboration, AI integration, and modern UX. Existing solutions are fragmented, not cloud-native, and limited in secure real-time sharing capabilities.",
+    "solution": "Designed and developed a fully responsive cloud-based molecular research platform that enables users to generate molecules with SMILES notation, visualize them in-browser, and collaborate via real-time channels.",
+    "responsibilities": [
+      "Developed the entire frontend using Next.js, TypeScript, and Tailwind CSS.",
+      "Integrated RDKit.js for real-time molecule visualization directly in the browser.",
+      "Implemented secure authentication using NextAuth with JWT strategy.",
+      "Built RESTful APIs with Node.js and Express.js to manage user sessions, molecular data, and group access.",
+      "Established real-time communication using Ably for group collaboration on shared molecules.",
+      "Configured protected routes and session handling using NextAuth and middleware."
+    ],
+    "highlight_features": [
+      "AI-powered molecule generation using SMILES and NVIDIA APIs.",
+      "Interactive molecule rendering with RDKit.js.",
+      "Real-time collaboration with Ably channels.",
+      "JWT-secured authentication with protected routes using NextAuth.",
+      "Light and dark mode support for better UX."
+    ],
+    "tools_used": {
+      "frontend": ["Next.js", "React.js", "TypeScript", "Tailwind CSS"],
+      "backend": ["Node.js", "Express.js", "MongoDB", "Mongoose"],
+      "auth": ["NextAuth", "JWT"],
+      "real_time": ["Ably"],
+      "visualization": ["RDKit.js"],
+      "api_integrations": ["NVIDIA AI API"]
+    },
+    "outcome": [
+      "Enabled browser-based molecular generation and visualization for researchers.",
+      "Improved team productivity through real-time collaborative molecule editing.",
+      "Provided a secure and modern UI for a niche scientific workflow."
+    ],
+    "keywords": [
+      "SMILES",
+      "Molecule Generator",
+      "Next.js",
+      "Scientific SaaS",
+      "RDKit",
+      "Real-time Collaboration",
+      "NextAuth",
+      "JWT",
+      "Ably",
+      "TypeScript Project"
+    ],
+    "links": {
+      "live_demo": "https://genmol-ai.vercel.app/",
+      "github": "https://github.com/prsAxios/GenMol"
+    }
   },
+
   {
-    "title": "DecentraPay - Crypto Payment Gateway",
-    "slug": "decentrapay",
-    "description": "DecentraPay is a cutting-edge decentralized payment gateway that enables seamless cryptocurrency transactions for businesses and individuals. Built with React, this platform supports multiple blockchain networks including Ethereum and Polygon (MATIC). The application features a secure wallet connection system that allows users to connect their cryptocurrency wallets using MetaMask or other compatible wallet providers. The payment gateway includes real-time transaction verification, multi-currency support, and a user-friendly interface for managing payments. The backend utilizes Web3.js for blockchain interactions and includes smart contracts written in Solidity to handle payment processing. The system also features transaction monitoring, rate conversion, and security measures to protect user funds. The application is designed with scalability in mind, allowing for easy integration with e-commerce platforms and other payment systems.",
-    "techStack": ["React", "Web3.js", "Solidity", "Polygon", "Metamask"],
-    "image_1": "/images/img7.png",
-    "image_2": "/images/img7.png",
-    "github": "https://github.com/prsAxios/DecentraPay",
-    "live": "https://decentrapay.vercel.app/"
+    "id": 3,
+    "project_name": "DecentraPay",
+    "slug":"decentrapay",
+    "image_1":"/images/projects/decentra_1.png",
+    "image_2":"/images/projects/decentra_2.png",
+    "image_3":"/images/projects/decentra_3.png",
+    "role": "Full Stack Developer",
+    "project_type": "Personal Project",
+    "one_liner": "A decentralized crypto payment gateway built on Ethereum, enabling secure, low-cost transactions through smart contract automation.",
+    "tech_stack": [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "Solidity",
+      "MongoDB",
+      "Web3.js",
+      "Ethereum",
+      "Truffle"
+    ],
+    "challenge": "Traditional payment systems are centralized, slow, and charge high transaction fees. There’s a growing need for decentralized and trustless alternatives in the Web3 space.",
+    "solution": "Developed a blockchain-based payment gateway using Ethereum smart contracts, allowing merchants and users to transact directly without intermediaries, while ensuring immutability and transparency.",
+    "responsibilities": [
+      "Built the full-stack application with React for the frontend and Express.js for the backend.",
+      "Designed and deployed Ethereum smart contracts using Solidity to handle payment logic.",
+      "Integrated Web3.js to connect the DApp to the Ethereum blockchain via MetaMask.",
+      "Set up MongoDB to store transaction metadata and user sessions.",
+      "Implemented wallet connection and interaction flows with MetaMask.",
+      "Developed API endpoints to help merchants integrate and initiate smart contract payments."
+    ],
+    "highlight_features": [
+      "Smart contract-based crypto payment execution.",
+      "Multi-currency support for accepting various tokens.",
+      "MetaMask integration for seamless Web3 experience.",
+      "Immutable and transparent transaction ledger.",
+      "Low transaction fees compared to traditional gateways."
+    ],
+    "tools_used": {
+      "frontend": ["React.js"],
+      "backend": ["Node.js", "Express.js", "MongoDB"],
+      "blockchain": ["Solidity", "Ethereum", "Web3.js", "Truffle"],
+      "wallet": ["MetaMask"]
+    },
+    "outcome": [
+      "Created a secure and transparent crypto payment solution.",
+      "Successfully deployed smart contracts to Ethereum Rinkeby testnet.",
+      "Enabled fast, direct crypto transactions for users and merchants."
+    ],
+    "keywords": [
+      "Web3",
+      "Crypto Payment Gateway",
+      "Solidity",
+      "Ethereum",
+      "Smart Contracts",
+      "Web3.js",
+      "MetaMask",
+      "Blockchain Developer",
+      "Truffle",
+      "React DApp"
+    ],
+    "links": {
+      "live_demo": "https://decentrapay.vercel.app/",
+      "github": "https://github.com/prsAxios/DecentraPay"
+    }
   },
+
   {
-    "title": "Crime Data Visualization Dashboard",
-    "slug": "crime-dashboard",
-    "description": "The Crime Data Visualization Dashboard is an interactive platform that provides comprehensive insights into crime patterns across Indian states. Built with Next.js and powered by D3.js and Chart.js, this dashboard offers a powerful visualization tool for law enforcement agencies and policymakers. The application features real-time data updates, interactive maps showing crime hotspots, and customizable charts that allow users to analyze crime trends over time. The dashboard includes filters for different crime categories, time periods, and geographic regions, making it easy to identify patterns and correlations. The interface is built with Tailwind CSS for a modern, responsive design that works across all devices. The system also includes data export capabilities and customizable report generation features to help stakeholders make informed decisions about crime prevention strategies.",
-    "techStack": ["Next.js", "D3.js", "Chart.js", "Tailwind CSS"],
-    "image_1": "/images/img8.png",
-    "image_2": "/images/img8.png",
-    "github": "https://github.com/prsAxios/CrimeDashboard",
-    "live": "https://crime-visual-dashboard.vercel.app/"
+    "id": 4,
+    "project_name": "CancAI",
+    "slug":"canc-ai",
+    "image_1":"/images/projects/cancai_1.png",
+    "image_2":"/images/projects/cancai_2.png",
+    "image_3":"/images/projects/cancai_3.png",
+    "role": "Full Stack Developer",
+    "project_type": "Personal Project",
+    "one_liner": "An AI-powered healthcare platform that enhances cancer care by identifying screening gaps and suggesting personalized treatment using patient data.",
+    "tech_stack": [
+      "React.js",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Drizzle ORM",
+      "Neon Database",
+      "Gemini AI",
+      "Privy"
+    ],
+    "challenge": "Cancer care is often hindered by delayed screenings, fragmented data, and lack of personalized treatment plans. A proactive and AI-driven solution was needed to streamline early detection and care personalization.",
+    "solution": "Built a modern web-based platform that analyzes medical records with Gemini AI, flags missed screenings, and provides tailored care suggestions — while maintaining strict patient data privacy.",
+    "responsibilities": [
+      "Developed the frontend interface using Next.js, React, and Tailwind CSS for responsiveness and clean design.",
+      "Integrated Gemini AI for intelligent parsing and analysis of structured medical records.",
+      "Configured backend logic using Drizzle ORM and Neon for fast and scalable database queries.",
+      "Implemented data privacy safeguards with Privy to ensure secure handling of sensitive user data.",
+      "Designed modular UI components for patient dashboards, treatment paths, and alerts."
+    ],
+    "highlight_features": [
+      "AI-based detection of missing cancer screenings.",
+      "Personalized treatment recommendations based on patient data.",
+      "Full-stack TypeScript implementation for safety and maintainability.",
+      "Lightweight, responsive interface with accessibility focus.",
+      "HIPAA-conscious privacy implementation using Privy."
+    ],
+    "tools_used": {
+      "frontend": ["Next.js", "React.js", "TypeScript", "Tailwind CSS"],
+      "backend": ["Drizzle ORM", "Neon Database"],
+      "ai": ["Gemini AI"],
+      "privacy": ["Privy"]
+    },
+    "outcome": [
+      "Improved early detection opportunities through AI-driven screening gap analysis.",
+      "Delivered a secure, scalable MVP for patient-focused cancer care.",
+      "Streamlined patient-provider interaction using intuitive UI components."
+    ],
+    "keywords": [
+      "AI in Healthcare",
+      "Cancer Care",
+      "Next.js",
+      "Gemini AI",
+      "Drizzle ORM",
+      "Neon DB",
+      "Tailwind CSS",
+      "HIPAA",
+      "Privy",
+      "TypeScript Project"
+    ],
+    "links": {
+      "live_demo": "https://cancai.vercel.app/",
+      "github": "https://github.com/prsAxios/CancAI"
+    }
   },
+  
   {
-    "title": "Portfolio Website (This One!)",
-    "slug": "portfolio-site",
-    "description": "My personal developer portfolio built with Next.js and Sass, showcasing projects, skills, and contact information with smooth animations.",
-    "techStack": ["Next.js", "Sass", "Framer Motion", "TypeScript"],
-    "image_1": "/images/img9.png",
-    "image_2": "/images/img9.png",
-    "github": "https://github.com/prsAxios/PortFolio",
-    "live": "https://pradeep-portfolio.vercel.app/"
+    "id" : 5,
+    "project_name": "Portfolio Website",
+    "slug":"portfolio",
+    "role": "Frontend Developer & Designer",
+    "project_type": "Personal Project",
+         "image_1":"/images/projects/decentra_1.png",
+    "image_2":"/images/projects/decentra_2.png",
+    "image_3":"/images/projects/decentra_3.png",
+    "one_liner": "A cinematic, animation-rich portfolio website built to showcase my work with Awwwards-level design precision and modern frontend technologies.",
+    "tech_stack": [
+      "React.js",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "GSAP",
+      "Framer Motion"
+    ],
+    "challenge": "Typical developer portfolios often lack visual storytelling and creative interaction. I wanted to break that pattern by creating an experience that feels immersive, expressive, and visually sophisticated.",
+    "solution": "Designed and developed a personal portfolio that reflects high-end design sensibilities using advanced animation libraries and performance-first architecture. Inspired by the standards of platforms like Awwwards and Siteinspire.",
+    "responsibilities": [
+      "Built the entire website using React and Next.js with full TypeScript support.",
+      "Crafted interactive transitions, hover effects, and scroll-based animations using GSAP and Framer Motion.",
+      "Implemented responsive, pixel-perfect layouts using Tailwind CSS for mobile to ultra-wide screens.",
+      "Engineered page speed and SEO enhancements via Next.js static generation and lazy loading.",
+      "Designed each section with storytelling in mind — balancing visual hierarchy, micro-interactions, and typographic clarity."
+    ],
+    "highlight_features": [
+      "Smooth page transitions with Framer Motion.",
+      "Scroll-based animation and parallax effects with GSAP.",
+      "Interactive hover effects and micro-animations.",
+      "Responsive design supporting all screen sizes.",
+      "SEO-optimized structure and fast-loading architecture."
+    ],
+    "tools_used": {
+      "frontend": ["React.js", "Next.js", "TypeScript", "Tailwind CSS"],
+      "animation": ["GSAP", "Framer Motion"],
+      "performance": ["Next.js SSG", "Lazy Loading"]
+    },
+    "outcome": [
+      "Successfully delivered a visually-rich developer portfolio that stands out in the crowd.",
+      "Demonstrated mastery over animation libraries and frontend design systems.",
+      "Received positive feedback from peers, mentors, and recruiters for design, polish, and clarity."
+    ],
+    "keywords": [
+      "Awwwards Inspired",
+      "GSAP",
+      "Framer Motion",
+      "Portfolio Website",
+      "Frontend Developer",
+      "Creative Developer",
+      "Next.js",
+      "Tailwind CSS",
+      "Web Animations",
+      "TypeScript"
+    ],
+    "links": {
+      "live_demo": "https://portfolio-prsaxios.vercel.app/",
+      "github": "https://github.com/prsAxios/PortFolio"
+    }
   }
 ]

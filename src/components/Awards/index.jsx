@@ -1,8 +1,12 @@
-import { GiAchievement } from "react-icons/gi";
+
 import style from "./style.module.scss";
 import Image from "next/image";
-import { title } from "process";
+import gsap from "gsap";
+import { useEffect, useRef } from "react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+
+gsap.registerPlugin(ScrollTrigger);
 const awards = [
     {
         id: 1,
@@ -49,11 +53,36 @@ const awards = [
 ];
 
 const Awards = () => {
+
+    useEffect(() => {
+        const cards = gsap.utils.toArray(`.${style.award}`)
+
+        cards.forEach((card, index) => {
+            gsap.fromTo(card, {
+                y: 100,
+                opacity: 0,
+            }, {
+                y: 0,
+                opacity: 1,
+                duration: 1,
+                stagger: 0.2,
+                ease: "power3.out",
+                scrollTrigger: {
+                    trigger: card,
+                    start: "top 85%",
+                    toggleActions: "play none none reverse",
+                }
+            })
+        })
+
+
+    }, []);
+
     return (
         <section className={style.section}>
             <div className={style.body}>
                 {awards.map((award) => (
-                    <div key={award.id} className={style.award}>
+                    <div key={award.id} className={style.award} >
                         <div className={award.id === 1 ? style.imageContainer2 : style.imageContainer} >
                             <Image
                                 src={award.cert}

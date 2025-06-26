@@ -9,38 +9,34 @@ const SliderCert_ = () => {
     const slider_Cont_1 = [
         {
             color: "#0074D9", // Bright blue
-            src: "c1.png"
+            src: "/images/certificate/restAPI.png"
         },
         {
             color: "#FFD700", // Gold yellow
-            src: "c2.png"
+            src: "/images/certificate/javascript.png"
         },
         {
             color: "#FFA500", // Orange
-            src: "img1.png"
+            src: "/images/certificate/skyscanner.png"
         },
         {
             color: "#FFFFFF", // White
-            src: "img2.png"
+            src: "/images/certificate/walmart.png"
         }
     ]
 
     const slider_Cont_2 = [
         {
-            color: "#39FF14", // Neon green
-            src: "img3.png"
+            src: "/images/award/vivancerb.jpg"
         },
         {
-            color: "#FF69B4", // Hot pink
-            src: "img4.png"
+            src: "/images/award/decodex.jpg"
         },
         {
-            color: "#FF4500", // Orange-red
-            src: "img5.png"
+            src: "/images/award/flipkart.jpg"
         },
         {
-            color: "#4169E1", // Royal blue
-            src: "img6.png"
+            src: "/images/award/acehack.png"
         }
     ]
 
@@ -64,13 +60,13 @@ const SliderCert_ = () => {
 
                             className={Styles.item}
                             key={`sli_${index}`}
-                            style={{ backgroundColor: item.color }}
+                            style={{ backgroundColor: "transparent", border: "solid white 1px" }}
                         >
                             <div className={Styles.imageContainer}>
                                 <Image
                                     alt="ProjectImages"
                                     fill={true}
-                                    src={`/images/${item.src}`}
+                                    src={item.src}
                                 />
                             </div>
                         </div>
@@ -83,13 +79,13 @@ const SliderCert_ = () => {
                         <div
                             className={Styles.item}
                             key={`sli_${index}`}
-                            style={{ backgroundColor: item.color }}
+                            style={{ backgroundColor: "transparent", border: "solid white 1px" }}
                         >
                             <div className={Styles.imageContainer}>
                                 <Image
                                     alt="ProjectImages"
                                     fill={true}
-                                    src={`/images/${item.src}`}
+                                    src={item.src}
                                 />
                             </div>
                         </div>

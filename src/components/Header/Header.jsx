@@ -1,11 +1,11 @@
 "use client";
-import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
 import style from "./header.module.scss";
 import Navbar from "../Navbar/Navbar";
 import { AnimatePresence } from "framer-motion";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-// import Buttonx from "../../common/roundedbutton";
+import { Download } from "lucide-react";
 
 const Header = () => {
     const [isActive, setIsActive] = useState(false);
@@ -44,11 +44,12 @@ const Header = () => {
         <>
             <div className={style.header}>
                 <div className={style.logo}>
-                    <p className={style.copyright}>©</p>
+                    <a href="/pradeep_suthar_resume.pdf" download target="_blank" rel="noopener noreferrer">
+                        <p className={style.copyright}><Download /></p>
+                    </a>
                     <div className={style.name}>
-                        <p className={style.codeby}>Code by</p>
-                        <p className={style.pradeep}>Pradeep</p>
-                        <p className={style.suthar}>Suthar</p>
+                        <p className={style.codeby}>Download</p>
+                        <p className={style.pradeep}>Resume</p>
                     </div>
                 </div>
 

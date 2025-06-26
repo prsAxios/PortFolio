@@ -12,6 +12,9 @@ import Link from "next/link";
 import projectData from "../../data/projects.json";
 import { useRouter } from "next/navigation";
 
+
+
+
 const index = () => {
     const router = useRouter();
     const projects = projectData;
@@ -95,8 +98,8 @@ const index = () => {
                         <Project
                             key={index}
                             index={index}
-                            title={project.title}
-                            description={project.description}
+                            title={project.project_name}
+                            description={project.one_liner}
                             slug={project.slug}
                             manageModal={manageModal}
                             onProjectClick={handleProjectClick}
@@ -105,9 +108,6 @@ const index = () => {
                 })}
             </div>
 
-            <Button className="">
-                <p className="">View All</p>
-            </Button>
 
             <>
                 {/* hover modal container code */}
@@ -133,7 +133,7 @@ const index = () => {
                                         src={project.image_1}
                                         width={300}
                                         height={0}
-                                        alt={project.title}
+                                        alt={project.project_name}
                                     />
                                 </div>
                             );

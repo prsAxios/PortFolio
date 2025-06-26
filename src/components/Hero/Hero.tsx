@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+
 import style from "./hero.module.scss";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
@@ -28,7 +28,7 @@ const Hero = () => {
             },
             x: "-300px",
         });
-    }, []);
+    },);
 
     const animation = () => {
         if (x_axis_perc <= -100) {
@@ -47,10 +47,10 @@ const Hero = () => {
 
     return (
         <main className={style.mainHero}>
-            <Image
-                src={"/contact.svg"}
+            <img
+                src={"/images/Hero/right.png"}
                 alt="HeroImage"
-                fill={true}
+
             />
             <div className={style.sliderContainer}>
                 <div ref={slider} className={style.slider}>
@@ -60,21 +60,13 @@ const Hero = () => {
             </div>
 
             <div data-scroll data-scroll-speeed={0.1} className={`${style.description}`}>
-                <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 10 10"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <path
-                        d="M8 8.5C8.27614 8.5 8.5 8.27614 8.5 8L8.5 3.5C8.5 3.22386 8.27614 3 8 3C7.72386 3 7.5 3.22386 7.5 3.5V7.5H3.5C3.22386 7.5 3 7.72386 3 8C3 8.27614 3.22386 8.5 3.5 8.5L8 8.5ZM0.646447 1.35355L7.64645 8.35355L8.35355 7.64645L1.35355 0.646447L0.646447 1.35355Z"
-                        fill="yellow"
-                    />
-                </svg>
-                <p>Frontend Developer</p>
-                <p>Full Stack Developer</p>
+                <p>
+                    -Frontend Developer<br />
+                    -Web Developer<br />
+                    -Optimizing for speed, UX, and search.
+                </p>
             </div>
+
         </main>
     )
 }

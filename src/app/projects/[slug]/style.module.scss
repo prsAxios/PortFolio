@@ -11,6 +11,7 @@
         border: solid 1px rgb(0, 0, 0);
         display: flex;
         flex-direction: column;
+        width: 100%;
 
 
         .Hero {
@@ -62,11 +63,12 @@
             flex-direction: column;
             gap: 2rem;
             padding: 2rem 5rem;
-            background-color: #101010;
-            color: #eee;
+            background-color: #ffffff;
+            color: #000000;
+
 
             @media (min-width: 768px) {
-                flex-direction: row;
+                flex-direction: column;
                 justify-content: center;
                 align-items: flex-start;
             }
@@ -74,9 +76,12 @@
             .description,
             .techStack {
                 flex: 1;
+
             }
 
             .description {
+                border-bottom: solid 1px gainsboro;
+
                 h2 {
                     font-size: 1.8rem;
                     margin-bottom: 1rem;
@@ -85,11 +90,14 @@
                 p {
                     font-size: 1rem;
                     line-height: 1.7;
-                    color: #ccc;
+                    color: #000000;
                 }
             }
 
             .techStack {
+                width: 100%;
+                border-bottom: solid 1px gainsboro;
+
                 h2 {
                     font-size: 1.8rem;
                     margin-bottom: 1rem;
@@ -101,26 +109,136 @@
                     gap: 0.5rem;
 
                     li {
-                        background-color: #222;
+                        background-color: #ffffff;
                         padding: 0.5rem 1rem;
                         border-radius: 8px;
                         font-size: 0.9rem;
-                        color: #ccc;
+                        // color: #ccc;
                         transition: transform 0.2s ease;
                         list-style: none;
 
                         &:hover {
                             transform: scale(1.05);
-                            background-color: #1f1f1f;
+                            background-color: #000000;
+                            color: white;
+                            border: solid rgb(255, 255, 255) 1px;
                         }
                     }
 
                 }
             }
+
+            .Learned {
+                width: 100%;
+                border-bottom: 1px solid gainsboro;
+            }
+
+            .KeyFeatures {
+                width: 100%;
+                border-bottom: 1px solid gainsboro;
+            }
+
+            .responsibilities {
+                width: 100%;
+                border-bottom: 1px solid gainsboro;
+            }
+
+        }
+
+        .Links {
+
+            display: flex;
+            margin-bottom: 2rem;
+
+
+            padding: 1rem 4rem;
+
+            .container {
+                display: flex;
+                gap: 2rem;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+
+            .card {
+                flex: 1 1 45%;
+                background-color: transparent;
+                border: 1px solid #b1b1b1;
+                border-radius: 1rem;
+                padding: 1rem;
+                transition: transform 0.2s ease;
+
+
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    margin-bottom: 1rem;
+                    object-fit: cover;
+                }
+
+                a {
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                    font-size: 1.2rem;
+                    margin-top: 0.5rem;
+                    text-decoration: none;
+                    font-weight: 600;
+                    color: #3f3f3f;
+                    border-bottom: solid 1px gainsboro;
+                    transition: all 0.2s ease-in-out;
+
+                    &:hover {
+                        border-color: #020202;
+                    }
+                }
+
+            }
+
+
         }
 
 
 
+    }
+}
 
+.toolsUsed {
+    width: 100%;
+    border-bottom: solid 1px gainsboro;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2rem;
+
+    h3 {
+        display: block;
+    }
+
+
+
+    .tool {
+        flex-direction: row;
+        display: inline-flex;
+        flex-wrap: wrap;
+        padding: 1rem;
+        border: solid 1px gainsboro;
+        margin-left: 1rem;
+
+        li {
+            list-style: none;
+            display: inline-flex;
+            background-color: #ffffff;
+            padding: 0.5rem 1rem;
+            font-size: 0.9rem;
+            transition: transform 0.2s ease;
+            list-style: none;
+            border: solid gainsboro 1px;
+            margin-left: 1rem;
+
+
+
+        }
     }
 }

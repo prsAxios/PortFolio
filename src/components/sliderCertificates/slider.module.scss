@@ -44,27 +44,10 @@
                 height: 80%;
 
                 img {
-                    object-fit: cover;
+                    object-fit: contain;
                 }
             }
         }
     }
 
-    // .circleContainer {
-    //     position: relative;
-    //     margin-top: 100px;
-    //     // z-index: 10;
-    //     overflow: visible;
-
-    //     .circle {
-    //         height: 100vh;
-    //         /* Reduce height to stay within bounds */
-    //         width: 120%;
-    //         left: 0;
-    //         border-radius: 0 0 50% 50%;
-    //         background-color: white;
-    //         position: absolute;
-    //         box-shadow: 0px 60px 50px rgba(0, 0, 0, 0.748);
-    //     }
-    // }
 }

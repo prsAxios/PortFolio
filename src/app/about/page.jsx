@@ -18,16 +18,9 @@ const About = () => {
     };
 
     const [selectedSection, setSelectedSection] = useState("Academics");
-    // const [currentSection, setCurrentSection] = useState(Academics);
-
-    // useEffect(() => {
-    //     console.log(selectedSection);
-    //     console.log(`Current Section Name:-  ${currentSection}`);
-    // }, [selectedSection]);
 
     const handleSectionClick = (sectionName) => {
         setSelectedSection(sectionName);
-        // setCurrentSection(components[sectionName]);
     }
 
     return (

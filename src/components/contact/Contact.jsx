@@ -2,10 +2,8 @@
 
 import styles from "./contact.module.scss";
 import Image from 'next/image';
-// import Rounded from '../../common/roundedbutton';
 import { useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
-// import Magnetic from '../../common/magnetic';
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 
@@ -45,22 +43,10 @@ export default function Contact() {
                         </div>
                         <h2>Contact</h2>
                     </span>
-                    <motion.div className={styles.buttonContainer}>
-                        {/* <Rounded backgroundColor={"#334BD3"} className={styles.button}>
-                            <p>Get in touch</p>
-                        </Rounded> */}
-                    </motion.div>
+
 
                 </div>
-                <div className={styles.nav}>
 
-                    {/* <Rounded>
-                        <p>info@dennissnellenberg.com</p>
-                    </Rounded> */}
-                    {/* <Rounded>
-                        <p>+31 6 27 84 74 30</p>
-                    </Rounded> */}
-                </div>
 
                 <div className={styles.icons}>
                     {icons.map((item, index) => (
@@ -87,47 +73,12 @@ export default function Contact() {
                 <div className={styles.info}>
                     <div>
                         <span>
-                            <h3>Version</h3>
-                            <p>2022 © Edition</p>
+                            <h3>Created by</h3>
+                            <p>Pradeep Suthar</p>
                         </span>
-                        <span>
-                            <h3>Version</h3>
-                            <p>11:49 PM GMT+2</p>
-                        </span>
-                    </div>
-                    {/* <div>
-                        <span>
-                            <h3>socials</h3>
-                            <Magnetic>
-                                <p>Awwwards</p>
-                            </Magnetic>
-                        </span>
-                        <Magnetic>
-                            <p>Instagram</p>
-                        </Magnetic>
-                        <Magnetic>
-                            <p>Dribbble</p>
-                        </Magnetic>
-                        <Magnetic>
-                            <p>Linkedin</p>
-                        </Magnetic>
-                    </div> */}
-                    <div>
-                        <span>
-                            <h3>socials</h3>
-
-                            <p>Awwwards</p>
-
-                        </span>
-
-                        <p>Instagram</p>
-
-                        <p>Dribbble</p>
-
-
-                        <p>Linkedin</p>
 
                     </div>
+
                 </div>
             </div>
         </motion.div>

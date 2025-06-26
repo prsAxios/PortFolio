@@ -1,3 +1,9 @@
+@media screen and (max-width:600px) {
+    .dec {
+        padding: 1rem;
+    }
+}
+
 .dec {
     margin-top: 200px;
     padding-left: 200px;
@@ -10,8 +16,10 @@
     .body {
         display: flex;
         max-width: 1400px;
-        gap: 50px;
+        gap: 5rem;
         position: relative;
+        flex-direction: column;
+        align-items: center;
 
 
         p {
@@ -42,29 +50,41 @@
             }
         }
 
-        // .button {
-        //     border: solid 1px white;
-        //     width: 180px;
-        //     height: 180px;
-        //     border-radius: 50%;
-        //     top: 80%;
-        //     left: calc(100% - 200px);
-        //     display: flex;
-        //     align-items: center;
-        //     justify-content: center;
-        //     position: absolute;
-        //     cursor: pointer;
-
-        //     p {
-        //         position: relative;
-        //         margin: 0px;
-        //         font-size: 20px;
-        //         font-weight: 600;
-
-        //     }
-        // }
-
     }
 
 
+}
+
+.buttonWrap {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+
+.button {
+    border: solid 1px gainsboro;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 2rem;
+    border-radius: 5rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: black;
+    background-color: white !important;
+    cursor: pointer;
+}
+
+.scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    color: white;
+    font-size: 1.5rem;
+    gap: 1rem;
 }

@@ -55,19 +55,22 @@
     position: relative;
     height: 110vh;
     overflow: hidden;
-    border: solid rgb(255, 255, 255) 1px;
+    align-items: start;
+
+    img {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+        // transform: translateY(-10%) scale(0.8);
+        aspect-ratio: 16/9;
+        margin-bottom: 2rem;
+        // margin-top: -10vh;
+
+    }
+
 }
 
-.mainHero img {
-    top: 120;
-    object-fit: contain;
-    width: 100%;
-    height: 100%;
-    transform: scale(0.8);
-    aspect-ratio: 16/9;
-    transition: transform 0.5s ease;
-    position: absolute;
-}
+
 
 .sliderContainer {
     position: absolute;
@@ -102,7 +105,7 @@
     top: 30%;
     left: 65%;
     color: rgb(255, 255, 255);
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 300;
 
     p {

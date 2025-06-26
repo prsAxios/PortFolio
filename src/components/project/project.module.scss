@@ -43,7 +43,7 @@ $quaternary-color : #e28cff;
         overflow: hidden;
         z-index: 3;
         border: solid 2px rgb(70, 69, 69);
-        border-radius: 10px;
+
     }
 
     .modalSlider {
@@ -59,8 +59,8 @@ $quaternary-color : #e28cff;
         display: flex;
         align-items: center;
         justify-content: center;
-        // background-color: transparent !important;
-        background-color: white !important;
+        background-color: transparent !important;
+
     }
 
     .modal img {

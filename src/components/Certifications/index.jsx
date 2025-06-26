@@ -1,5 +1,10 @@
 import style from './style.module.scss';
 import Image from 'next/image';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useEffect } from 'react';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Certifications = () => {
     const certificates = [
@@ -39,7 +44,31 @@ const Certifications = () => {
         "Skill/Domain",
         "Description",
 
-    ]
+    ];
+
+    useEffect(() => {
+        const cards = gsap.utils.toArray(`.${style.certificate}`)
+
+        cards.forEach((card, index) => {
+            gsap.fromTo(card, {
+                y: 100,
+                opacity: 0,
+            }, {
+                y: 0,
+                opacity: 1,
+                duration: 1,
+                stagger: 0.2,
+                ease: "power3.out",
+                scrollTrigger: {
+                    trigger: card,
+                    start: "top 85%",
+                    toggleActions: "play none none reverse",
+                }
+            })
+        })
+
+
+    }, []);
 
     return (
         <section className={style.Certifications}>
