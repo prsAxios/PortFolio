@@ -10,6 +10,13 @@ body {
 }
 
 .main-wrapper {
-  padding-top: 160px;
+  padding-top: 90px;
   min-height: 100vh;
+}
+
+@media(max-width:600px) {
+  .main-wrapper {
+    padding-top: 60px;
+    overflow: hidden;
+  }
 }
