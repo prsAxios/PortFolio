@@ -22,7 +22,7 @@ const Academics = () => {
             description: "Bachelor of Computer Applications",
             institution: "Chikitsak Samuha's Patkar-Varde College",
             year: "2019-2022",
-            Grade: "7.71",
+            CGPA: "7.70",
             Grade: "A",
             CourseWork: "OOP, OS, Networks, DBMS"
         }

@@ -82,16 +82,16 @@ const HorizontalScroll = () => {
 
                     <div className={style.KeyFeatures}>
                         <h2>Key Features</h2>
-                        <p>{highlight_features.map((feat, i) => (
+                        {highlight_features.map((feat, i) => (
                             <p key={i}>{feat}</p>
-                        ))}</p>
+                        ))}
                     </div>
 
                     <div className={style.Learned}>
                         <h2>Outcome</h2>
-                        <p>{outcome.map((line, i) => (
+                        {outcome.map((line, i) => (
                             <p key={i}>{line}</p>
-                        ))}</p>
+                        ))}
 
                     </div>
 
@@ -139,8 +139,8 @@ const HorizontalScroll = () => {
 
                     </div>
                 </section>
-            </div>
-        </div>
+            </div >
+        </div >
     );
 };
 

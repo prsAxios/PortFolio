@@ -1,40 +1,55 @@
-@import "../../styles/breakpoints";
+@use '../../styles/breakpoints' as breakpoints;
 
 $white-color: white;
+// ✅ _breakpoints.scss
+$xxs: 376px;
+$xs: 480px;
+$sm: 768px;
+$md: 1024px;
+$lg: 1280px;
+$xl: 1536px;
 
 .About {
     background-color: transparent;
-    padding: 1px 200px;
-    color: white !important;
+    padding: 1rem 1rem;
+    color: rgb(255, 255, 255) !important;
 
-
-
+    position: relative;
+    display: flex;
     overflow: hidden;
 
+    // Mobile first approach
 
 
-    @include respond(sm) {
-        padding: 1rem;
-    }
 
-    @include respond(md) {
-        padding: 2rem;
-    }
 
-    @include respond(lg) {
+    @include breakpoints.respond(md) {
         padding: 3rem;
+    }
+
+    @include breakpoints.respond(lg) {
+        padding: 4rem;
+    }
+
+    @include breakpoints.respond(xl) {
+        padding: 2rem 8rem;
     }
 
     .body {
 
         display: flex;
         flex-direction: column;
-        gap: 6;
+        align-items: start;
+        justify-content: flex-start;
+        gap: 2rem;
 
-        // width: 100%;
 
 
         .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
 
             p {
                 color: white !important;
@@ -46,18 +61,13 @@ $white-color: white;
 
         .buttons {
             display: flex;
+            align-items: start;
+            padding: 1rem;
+            gap: 2rem;
 
-
-
-
-            .category {
-                display: flex;
-                align-items: center;
-                gap: 8;
-
-
+            @include breakpoints.respond(sm) {
+                gap: 0.5rem;
             }
-
 
 
 
@@ -65,16 +75,33 @@ $white-color: white;
                 background-color: rgb(29, 28, 28);
                 color: white;
                 border-radius: 3em;
-                padding-left: 25px;
-                padding-right: 25px;
-                padding-top: 25px;
-                padding-bottom: 25px;
+                padding: 1.5rem;
                 font-size: 1rem;
                 font-weight: 400;
                 border: none;
                 border: solid rgb(167, 167, 167) 1px;
                 cursor: pointer;
                 transition: all 0.5s ease-in-out;
+
+                @include breakpoints.respond(xxs) {
+                    padding: 0.5rem;
+                    font-size: 0.2rem;
+                }
+
+                @include breakpoints.respond(xs) {
+                    padding: 0.2rem;
+                    font-size: 1rem;
+                }
+
+                @include breakpoints.respond(sm) {
+                    padding: 0.6rem;
+                    font-size: 0.7rem;
+                }
+
+                @include breakpoints.respond(md) {
+                    padding: 0.5rem;
+                    font-size: 0.7rem;
+                }
 
                 &:hover {
                     background-color: white;
@@ -83,30 +110,24 @@ $white-color: white;
                     border: solid black 1px;
                 }
 
-                @include respond(xxs) {
-                    padding: 0.5rem;
-                    font-size: 0.2rem;
-                }
 
-                @include respond(xs) {
-                    padding: 0.2rem;
-                    font-size: 11px;
-                }
 
-                @include respond(sm) {
-                    padding: 0.6rem;
-                    font-size: 0.7rem;
-                }
-
-                @include respond(md) {
-                    padding: 0.5rem;
-                    font-size: 0.7rem;
-                }
             }
         }
     }
 
     .child {
         margin-top: 32px;
+    }
+}
+
+@media (max-width:$xs) {
+    .About {
+        padding: 0.5rem;
+        border: solid 1px white;
+    }
+
+    .buttons {
+        gap: 1rem;
     }
 }

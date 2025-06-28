@@ -1,6 +1,6 @@
 .parentDiv {
-    background-color: white;
-    color: rgb(0, 0, 0);
+    background-color: transparent;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,8 +63,8 @@
             flex-direction: column;
             gap: 2rem;
             padding: 2rem 5rem;
-            background-color: #ffffff;
-            color: #000000;
+            background-color: transparent;
+            color: white;
 
 
             @media (min-width: 768px) {
@@ -90,7 +90,7 @@
                 p {
                     font-size: 1rem;
                     line-height: 1.7;
-                    color: #000000;
+                    color: white;
                 }
             }
 
@@ -109,7 +109,7 @@
                     gap: 0.5rem;
 
                     li {
-                        background-color: #ffffff;
+                        background-color: transparent;
                         padding: 0.5rem 1rem;
                         border-radius: 8px;
                         font-size: 0.9rem;
@@ -119,9 +119,9 @@
 
                         &:hover {
                             transform: scale(1.05);
-                            background-color: #000000;
+                            background-color: transparent;
                             color: white;
-                            border: solid rgb(255, 255, 255) 1px;
+                            border: solid white 1px;
                         }
                     }
 
@@ -163,7 +163,7 @@
             .card {
                 flex: 1 1 45%;
                 background-color: transparent;
-                border: 1px solid #b1b1b1;
+                border: 1px solid white;
                 border-radius: 1rem;
                 padding: 1rem;
                 transition: transform 0.2s ease;
@@ -185,12 +185,12 @@
                     margin-top: 0.5rem;
                     text-decoration: none;
                     font-weight: 600;
-                    color: #3f3f3f;
-                    border-bottom: solid 1px gainsboro;
+                    color: white;
+                    border-bottom: solid 1px white;
                     transition: all 0.2s ease-in-out;
 
                     &:hover {
-                        border-color: #020202;
+                        border-color: white;
                     }
                 }
 
@@ -206,7 +206,7 @@
 
 .toolsUsed {
     width: 100%;
-    border-bottom: solid 1px gainsboro;
+    border-bottom: solid 1px white;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -223,18 +223,18 @@
         display: inline-flex;
         flex-wrap: wrap;
         padding: 1rem;
-        border: solid 1px gainsboro;
+        border: solid 1px white;
         margin-left: 1rem;
 
         li {
-            list-style: none;
+            // list-style: none;
             display: inline-flex;
-            background-color: #ffffff;
+            background-color: transparent;
             padding: 0.5rem 1rem;
             font-size: 0.9rem;
             transition: transform 0.2s ease;
             list-style: none;
-            border: solid gainsboro 1px;
+            border: solid white 1px;
             margin-left: 1rem;
 
 

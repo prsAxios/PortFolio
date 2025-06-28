@@ -1,3 +1,4 @@
+// ✅ _breakpoints.scss
 $breakpoint-xxs: 376px;
 $breakpoint-xs: 480px;
 $breakpoint-sm: 768px;
@@ -40,5 +41,9 @@ $breakpoint-xl: 1536px;
         @media (max-width: $breakpoint-xl) {
             @content;
         }
+    }
+
+    @else {
+        @warn "Unknown breakpoint: #{$breakpoint}";
     }
 }
