@@ -14,7 +14,7 @@ const awards = [
         Achievement: "Role: Intern Team Leader | Awarded by: Regional Manager – Apurva Sir",
         Date: "BBD Sale Season, 2022",
         desc: "Received the “Best Dedication” award during Flipkart’s Big Billion Days 2022 campaign for exemplary performance as an Intern Team Leader at Ekart. I was recognized for driving operational efficiency by analyzing delivery metrics, converting customer feedback into actionable insights, and helping track fraudulent delivery attempts. My leadership contributed to smoother delivery operations and enhanced customer satisfaction during one of India’s largest e-commerce events. The award was formally presented by the Regional Manager for outstanding ownership and results-driven execution.",
-        cert: "/images/award/img_3.jpg",
+        cert: "/images/award/flipkart.jpg",
     },
     {
         id: 2,
@@ -38,7 +38,7 @@ const awards = [
         Achievement: "Certificate of Appreciation",
         Date: "Mar-2024",
         desc: "Volunteered at the National Conference on Role of Engineers in Nation Building – 2024 (NCRENB-2024) and received a Certificate of Appreciation for supporting event execution, managing technical setups, and assisting in smooth coordination during national-level sessions focused on engineering and innovation.",
-        cert: "/images/award/img_2.jpg"
+        cert: "/images/award/vivancerb.jpg"
 
     },
     {
@@ -47,7 +47,7 @@ const awards = [
         Achievement: "Internal Campus Hackathon (Viva Institute of Technology)",
         Date: "Sep-2024",
         desc: "Ranked 6th in the internal round of Smart India Hackathon 2024, held at Viva Institute of Technology. Developed a tech-driven solution to a real-world problem under tight timelines, showcasing strong teamwork, innovation, and technical execution during the campus-wide selection phase.",
-        cert: "/images/award/img_1.jpg"
+        cert: "/images/award/sih.jpg"
     }
 
 ];

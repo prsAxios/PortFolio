@@ -1,3 +1,5 @@
+@import "../../styles/breakpoints";
+
 $white-color: white;
 
 .About {
@@ -5,14 +7,32 @@ $white-color: white;
     padding: 1px 200px;
     color: white !important;
 
+
+
     overflow: hidden;
+
+
+
+    @include respond(sm) {
+        padding: 1rem;
+    }
+
+    @include respond(md) {
+        padding: 2rem;
+    }
+
+    @include respond(lg) {
+        padding: 3rem;
+    }
 
     .body {
 
         display: flex;
         flex-direction: column;
         gap: 6;
+
         // width: 100%;
+
 
         .header {
 
@@ -26,29 +46,20 @@ $white-color: white;
 
         .buttons {
             display: flex;
-            gap: 6;
-            justify-content: space-between;
+
+
 
 
             .category {
                 display: flex;
                 align-items: center;
                 gap: 8;
+
+
             }
 
-            .viewType {
-                display: flex;
-                align-items: center;
-                gap: 8;
 
-                button {
 
-                    border-radius: 50% !important;
-                    display: flex;
-                    align-content: center;
-
-                }
-            }
 
             button {
                 background-color: rgb(29, 28, 28);
@@ -58,7 +69,7 @@ $white-color: white;
                 padding-right: 25px;
                 padding-top: 25px;
                 padding-bottom: 25px;
-                font-size: 18px;
+                font-size: 1rem;
                 font-weight: 400;
                 border: none;
                 border: solid rgb(167, 167, 167) 1px;
@@ -70,6 +81,26 @@ $white-color: white;
                     color: black;
                     transition: all 0.5s ease-in-out;
                     border: solid black 1px;
+                }
+
+                @include respond(xxs) {
+                    padding: 0.5rem;
+                    font-size: 0.2rem;
+                }
+
+                @include respond(xs) {
+                    padding: 0.2rem;
+                    font-size: 11px;
+                }
+
+                @include respond(sm) {
+                    padding: 0.6rem;
+                    font-size: 0.7rem;
+                }
+
+                @include respond(md) {
+                    padding: 0.5rem;
+                    font-size: 0.7rem;
                 }
             }
         }

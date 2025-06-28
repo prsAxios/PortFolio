@@ -1,3 +1,5 @@
+@import "../../styles/breakpoints";
+
 .Certifications {
     .body {
         display: flex;
@@ -7,8 +9,12 @@
         .heading {
             display: flex;
             align-items: center;
-            border-bottom: solid 1px rgb(169, 97, 97);
+            border-bottom: solid 1px rgb(101, 101, 101);
             padding: 0px 8px;
+
+            @include respond(sm) {
+                display: none;
+            }
 
 
 
@@ -29,8 +35,12 @@
         .certificate {
             display: flex;
             align-items: center;
-            border-bottom: solid 1px gainsboro;
+            border-bottom: solid 1px rgb(142, 142, 142);
             padding: 24px 8px;
+
+            @include respond(sm) {
+                flex-direction: column;
+            }
 
             .imageContainer {
                 flex: 1;
@@ -44,15 +54,34 @@
                     object-fit: cover;
                     border: solid 1px rgb(234, 234, 234);
                 }
+
+                @include respond(sm) {
+                    width: 300px;
+                    height: 200px;
+                    aspect-ratio: 1.5;
+                }
             }
 
             p {
-                flex: 1;
                 text-align: start;
+                display: flex;
+                flex: 1;
+                justify-content: start;
                 box-sizing: border-box;
-
                 margin-left: 50px;
+
+
+                @include respond(sm) {
+                    margin-left: 0;
+                    text-align: start;
+
+                    &:first-child {
+                        text-align: start;
+                    }
+                }
             }
+
+
         }
     }
 }

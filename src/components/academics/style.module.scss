@@ -1,20 +1,29 @@
+@import "../../styles/breakpoints";
+
 .section {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     background-color: transparent;
     color: white !important;
     padding: 8px;
+
+    @include respond(sm) {
+        flex-direction: row;
+    }
 
     .col_headings {
         display: flex;
         align-content: center;
         justify-content: space-around;
-        width: 100%;
         border-bottom: solid 1px gainsboro;
         padding: 24px 8px;
         margin: 16px 0;
+
+
+        @include respond(sm) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
 
         p {
             font-size: 1vw;
@@ -31,55 +40,80 @@
             &:first-child {
                 margin-right: 48px;
             }
+
         }
+
+        @include respond(md) {
+            display: none;
+        }
+
     }
 
-    .education {
+    .edu_Container {
         display: flex;
-        align-items: center;
-        justify-content: space-around;
-        border-bottom: solid 1px rgb(185, 185, 185);
-        width: 100%;
-        padding: 24px 8px;
-        margin: 16px 0;
+        flex-direction: column;
 
 
 
-        .title {
-            margin-right: 48px;
-            font-size: 2vw;
-            font-weight: 500;
-            transition: all 0.5s ease-in-out;
-
-            &:hover {
-                color: rgb(159, 159, 159);
-                transform: translateX(-10px);
-            }
-        }
-
-        p {
-            font-size: 1vw;
-            color: rgb(255, 255, 255);
-            flex: 1;
+        .education {
             display: flex;
             align-items: center;
-            justify-content: center;
-            min-width: 150px;
-            box-sizing: border-box;
-            font-weight: 300;
-            padding: 8px 16px;
+            justify-content: space-around;
+            border-bottom: solid 1px rgb(185, 185, 185);
+            padding: 24px 8px;
+            margin: 16px 0;
 
+
+
+            .title {
+                margin-right: 48px;
+                font-size: 2vw;
+                font-weight: 500;
+                transition: all 0.5s ease-in-out;
+
+                @include respond(xs) {
+                    font-size: 1.5rem;
+                }
+
+                &:hover {
+                    color: rgb(159, 159, 159);
+                    transform: translateX(-10px);
+                }
+            }
+
+            p {
+                font-size: 1vw;
+                color: rgb(255, 255, 255);
+                flex: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-width: 150px;
+                box-sizing: border-box;
+                font-weight: 300;
+                padding: 8px 16px;
+
+                @include respond(xs) {
+                    font-size: 0.8rem;
+                    align-items: start;
+                    justify-content: start;
+
+                }
+
+            }
+
+            @include respond(sm) {
+                align-items: start;
+                justify-content: start;
+                padding: 8px 0px;
+            }
         }
     }
+
 }
 
 @media(max-width: 480px) {
     .education {
         flex-direction: column;
     }
-
-    .col_headings {
-        display: none !important;
-    }
-
 }

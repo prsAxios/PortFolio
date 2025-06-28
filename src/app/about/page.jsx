@@ -40,11 +40,6 @@ const About = () => {
                         <button onClick={() => handleSectionClick("Awards")} style={{ backgroundColor: selectedSection === "Awards" ? "white" : "transparent", color: selectedSection === "Awards" ? "black" : "white" }}>Achievements</button>
                     </div>
 
-                    {/* viewtype div list or grid */}
-                    <div className={styles.viewType}>
-                        <button><ListFilter /></button>
-                        <button><Grid2X2 /></button>
-                    </div>
 
 
                 </div>

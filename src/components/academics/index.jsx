@@ -15,7 +15,7 @@ const Academics = () => {
             year: "2023-2025",
             CGPA: "8.81",
             Grade: "A",
-            CourseWork: "Data strructures"
+            CourseWork: "Web Development, Data Structures, Cloud Computing, AI/ML"
         },
         {
             title: "BCA",
@@ -24,7 +24,7 @@ const Academics = () => {
             year: "2019-2022",
             Grade: "7.71",
             Grade: "A",
-            CourseWork: "Data strructures"
+            CourseWork: "OOP, OS, Networks, DBMS"
         }
     ];
 
@@ -65,18 +65,26 @@ const Academics = () => {
                 ))}
             </div>
 
-            {Academic_data.map((item, index) => (
-                <div key={index} className={styles.education}>
-                    <p className={styles.title}>{item.title}</p>
+            <div className={styles.edu_Container}>
+
+                {Academic_data.map((item, index) => (
+
+                    <div key={index} className={styles.education}>
+                        <p className={styles.title}>{item.title}</p>
+                        <p>{item.institution}</p>
+                        <p>{item.year}</p>
+                        <p>{item.CGPA}</p>
+                        <p>{item.Grade}</p>
+                        <p>{item.CourseWork}</p>
+                    </div>
 
 
-                    <p>{item.institution}</p>
-                    <p>{item.year}</p>
-                    <p>{item.CGPA}</p>
-                    <p>{item.Grade}</p>
-                    <p>{item.CourseWork}</p>
-                </div>
-            ))}
+
+
+
+
+                ))}
+            </div>
         </section>
     )
 }
