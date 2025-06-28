@@ -1,3 +1,5 @@
+@import '../../../styles/breakpoints';
+
 .project {
     display: flex;
     width: 100%;
@@ -8,6 +10,18 @@
     cursor: pointer;
     transition: all 0.2s;
 
+    @include respond(lg) {
+        gap: 1rem;
+    }
+
+
+    @include respond(sm) {
+        flex-direction: column;
+        padding: 0.5rem;
+        align-items: start;
+
+    }
+
     h2 {
         font-size: 80px;
         margin: 0px;
@@ -15,11 +29,23 @@
         font-weight: 400;
         transition: all 0.4s;
 
+        flex: 1;
+
+        @include respond(sm) {
+            font-size: 2rem;
+        }
+
+        @include respond(lg) {
+            font-size: 2rem;
+        }
+
+
     }
 
     p {
         transition: all 0.4s ease-in-out;
         font-weight: 300;
+        flex: 1;
     }
 
     &:last-child {

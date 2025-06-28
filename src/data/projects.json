@@ -1,72 +1,72 @@
 [
 
-  {
-    "id": 1,
-    "project_name": "CLANS Web App",
-    "slug":"clans-web-app",
-    "image_1":"/images/projects/clans_1.png",
-    "image_2":"/images/projects/clans_2.png",
-    "image_3":"/images/projects/clans_3.png",
-    "role": "Frontend Developer",
-    "company": "Quadb Tech",
-    "location": "Remote, India",
-    "duration": "Mar 2025 – Jun 2025",
-    "project_type": "Internship",
-    "one_liner": "A decentralized rewards platform that connects Twitter engagement with KILT-powered identity to gamify social influence.",
-    "tech_stack": [
-      "React.js",
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "GSAP",
-      "React Context API",
-      "Twitter API",
-      "REST API"
-    ],
-    "challenge": "Traditional identity systems lack decentralization and user control. Social media engagement generates value but is rarely rewarded. CLANS aimed to fix this using decentralized identity and Twitter data.",
-    "solution": "Created a fully responsive web app where users authenticate via Twitter, post content, and earn rewards based on real-time engagement metrics like likes, retweets, and comments.",
-    "responsibilities": [
-      "Developed and shipped the complete frontend using React, Next.js, and Tailwind CSS.",
-      "Implemented protected routes and authentication flow using Twitter OAuth 2.0.",
-      "Integrated REST APIs for fetching engagement metrics and updating the leaderboard.",
-      "Handled routing, navigation guards, and session persistence with Next.js and React hooks.",
-      "Managed global state using React Context API for user sessions and UI state.",
-      "Built interactive UI components with animations using GSAP to enhance UX."
-    ],
-    "highlight_features": [
-      "Twitter OAuth-based authentication system.",
-      "Real-time tweet engagement tracking and leaderboard updates.",
-      "Protected routing and session-based access control.",
-      "Fully responsive UI with smooth transitions and modern animations.",
-      "Scalable global state management using React Context API."
-    ],
-    "tools_used": {
-      "Frontend": ["Next.js", "TypeScript", "Tailwind CSS", "GSAP"],
-      "Auth": ["Twitter API", "OAuth 2.0"],
-      "State Management": ["React Context API"],
-      "API Integrations": ["REST API"]
+    {
+      "id": 1,
+      "project_name": "CLANS Web App",
+      "slug":"clans-web-app",
+      "image_1":"/images/projects/clans_1.png",
+      "image_2":"/images/projects/clans_2.png",
+      "image_3":"/images/projects/clans_3.png",
+      "role": "Frontend Developer",
+      "company": "Quadb Tech",
+      "location": "Remote, India",
+      "duration": "Mar 2025 – Jun 2025",
+      "project_type": "Internship",
+      "one_liner": "A decentralized rewards platform that connects Twitter engagement with KILT-powered identity to gamify social influence.",
+      "tech_stack": [
+        "React.js",
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "GSAP",
+        "React Context API",
+        "Twitter API",
+        "REST API"
+      ],
+      "challenge": "Traditional identity systems lack decentralization and user control. Social media engagement generates value but is rarely rewarded. CLANS aimed to fix this using decentralized identity and Twitter data.",
+      "solution": "Created a fully responsive web app where users authenticate via Twitter, post content, and earn rewards based on real-time engagement metrics like likes, retweets, and comments.",
+      "responsibilities": [
+        "Developed and shipped the complete frontend using React, Next.js, and Tailwind CSS.",
+        "Implemented protected routes and authentication flow using Twitter OAuth 2.0.",
+        "Integrated REST APIs for fetching engagement metrics and updating the leaderboard.",
+        "Handled routing, navigation guards, and session persistence with Next.js and React hooks.",
+        "Managed global state using React Context API for user sessions and UI state.",
+        "Built interactive UI components with animations using GSAP to enhance UX."
+      ],
+      "highlight_features": [
+        "Twitter OAuth-based authentication system.",
+        "Real-time tweet engagement tracking and leaderboard updates.",
+        "Protected routing and session-based access control.",
+        "Fully responsive UI with smooth transitions and modern animations.",
+        "Scalable global state management using React Context API."
+      ],
+      "tools_used": {
+        "Frontend": ["Next.js", "TypeScript", "Tailwind CSS", "GSAP"],
+        "Auth": ["Twitter API", "OAuth 2.0"],
+        "State Management": ["React Context API"],
+        "API Integrations": ["REST API"]
+      },
+      "outcome": [
+        "Delivered a functional MVP that onboarded 300+ users during pilot.",
+        "Improved frontend performance and reduced UI bugs through clean architecture.",
+        "Helped showcase the potential of merging Web2 engagement with Web3 identity in a real-world use case."
+      ],
+      "keywords": [
+        "React Developer",
+        "Next.js Projects",
+        "OAuth Integration",
+        "Twitter Login",
+        "Protected Routes",
+        "Frontend Internship",
+        "Context API",
+        "GSAP Animations",
+        "Web App UI"
+      ],
+      "links": {
+        "live_demo": "https://clans-landing-page.vercel.app/",
+        "github": "https://github.com/prsAxios/CLANS"
+      }
     },
-    "outcome": [
-      "Delivered a functional MVP that onboarded 300+ users during pilot.",
-      "Improved frontend performance and reduced UI bugs through clean architecture.",
-      "Helped showcase the potential of merging Web2 engagement with Web3 identity in a real-world use case."
-    ],
-    "keywords": [
-      "React Developer",
-      "Next.js Projects",
-      "OAuth Integration",
-      "Twitter Login",
-      "Protected Routes",
-      "Frontend Internship",
-      "Context API",
-      "GSAP Animations",
-      "Web App UI"
-    ],
-    "links": {
-      "live_demo": "https://clans-landing-page.vercel.app/",
-      "github": "https://github.com/prsAxios/CLANS"
-    }
-  },
 
   {
     "id": 2,

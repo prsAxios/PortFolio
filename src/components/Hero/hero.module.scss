@@ -56,6 +56,8 @@
     height: 110vh;
     overflow: hidden;
     align-items: start;
+    background-color: transparent;
+    z-index: 50;
 
     img {
         object-fit: contain;
@@ -65,6 +67,7 @@
         aspect-ratio: 16/9;
         margin-bottom: 2rem;
         // margin-top: -10vh;
+        // position: sticky;
 
     }
 

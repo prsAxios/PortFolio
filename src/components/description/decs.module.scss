@@ -1,3 +1,5 @@
+@import '../../styles/breakpoints';
+
 @media screen and (max-width:600px) {
     .dec {
         padding: 1rem;
@@ -10,6 +12,16 @@
     padding-right: 200px;
     display: flex;
     justify-content: center;
+
+    @include respond(sm) {
+        padding: 1rem;
+        margin-top: 0px;
+    }
+
+    @include respond(md) {
+        padding: 2rem;
+
+    }
 
 
 
@@ -26,6 +38,10 @@
             margin: 0px;
             color: rgb(255, 255, 255);
 
+            @include respond(xs) {
+                font-size: 0.3rem;
+            }
+
             &:nth-of-type(1) {
                 gap: 8px;
                 font-size: 30px;
@@ -39,6 +55,10 @@
                     position: relative;
                     display: inline-flex;
                     overflow: hidden;
+
+                    @include respond(xs) {
+                        font-size: 1.1rem;
+                    }
                 }
             }
 
@@ -47,6 +67,10 @@
                 font-size: 22px;
                 font-weight: 400;
                 color: rgb(123, 123, 118);
+
+                @include respond(xs) {
+                    font-size: 0.3rem;
+                }
             }
         }
 
@@ -76,6 +100,17 @@
     color: black;
     background-color: white !important;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    @include respond(xs) {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    &:hover {
+        color: rgb(255, 255, 255) !important;
+        background-color: black !important;
+    }
 }
 
 .scroll {

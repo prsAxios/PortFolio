@@ -34,10 +34,10 @@ const About = () => {
 
                     {/* Button div */}
                     <div className={styles.category}>
-                        <button onClick={() => handleSectionClick("Academics")} style={{ backgroundColor: selectedSection === "Academics" ? "black" : "white", color: selectedSection === "Academics" ? "white" : "black" }}>Academics</button>
-                        <button onClick={() => handleSectionClick("Volunteering")} style={{ backgroundColor: selectedSection === "Volunteering" ? "black" : "white", color: selectedSection === "Volunteering" ? "white" : "black" }}>Volunteering</button>
-                        <button onClick={() => handleSectionClick("Certifications")} style={{ backgroundColor: selectedSection === "Certifications" ? "black" : "white", color: selectedSection === "Certifications" ? "white" : "black" }}>Certifications</button>
-                        <button onClick={() => handleSectionClick("Awards")} style={{ backgroundColor: selectedSection === "Awards" ? "black" : "white", color: selectedSection === "Awards" ? "white" : "black" }}>Achievements</button>
+                        <button onClick={() => handleSectionClick("Academics")} style={{ backgroundColor: selectedSection === "Academics" ? "white" : "transparent", color: selectedSection === "Academics" ? "black" : "white" }}>Academics</button>
+                        <button onClick={() => handleSectionClick("Volunteering")} style={{ backgroundColor: selectedSection === "Volunteering" ? "white" : "transparent", color: selectedSection === "Volunteering" ? "black" : "white" }}>Volunteering</button>
+                        <button onClick={() => handleSectionClick("Certifications")} style={{ backgroundColor: selectedSection === "Certifications" ? "white" : "transparent", color: selectedSection === "Certifications" ? "black" : "white" }}>Certifications</button>
+                        <button onClick={() => handleSectionClick("Awards")} style={{ backgroundColor: selectedSection === "Awards" ? "white" : "transparent", color: selectedSection === "Awards" ? "black" : "white" }}>Achievements</button>
                     </div>
 
                     {/* viewtype div list or grid */}

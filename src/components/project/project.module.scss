@@ -1,3 +1,5 @@
+@import "../../styles/breakpoints";
+
 $black-color : black;
 $white-color : white;
 $primary-color : #ff5100;
@@ -12,8 +14,15 @@ $quaternary-color : #e28cff;
     padding-left: 80px;
     flex-direction: column;
     margin-top: 300px;
-    background-color: $black-color;
+    background-color: transparent;
     color: $white-color;
+
+    @include respond(xs) {
+        padding: 1rem;
+        margin-top: 150px;
+    }
+
+
 
     .body {
         max-width: 1400px;
@@ -27,7 +36,7 @@ $quaternary-color : #e28cff;
         .projectsTitle {
             text-align: center;
             font-size: 8vw;
-            margin: 0px;
+            margin-bottom: 2rem;
             font-weight: 300;
             color: rgb(132, 132, 132);
         }
