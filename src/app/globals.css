@@ -2,10 +2,14 @@
   --font-anton: "General Sans", sans-serif
 
 }
+/* 
+body, html, * {
+  cursor: none !important;
+} */
 
 body {
   margin : 0px;
-  background-color: black;
+  background-color: rgb(255, 255, 255);
   font-family: var(--font-anton);
   overflow: hidden;
 
@@ -15,6 +19,7 @@ html {
   scrollbar-color: white gray;
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
+  cursor: none;
 }
 
 .main-wrapper {
@@ -27,4 +32,19 @@ html {
     padding-top: 60px;
     overflow: hidden;
   }
+}
+
+
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease-out;
 }

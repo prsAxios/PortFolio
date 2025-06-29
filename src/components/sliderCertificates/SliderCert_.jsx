@@ -60,7 +60,7 @@ const SliderCert_ = () => {
 
                             className={Styles.item}
                             key={`sli_${index}`}
-                            style={{ backgroundColor: "transparent", border: "solid white 1px" }}
+                            style={{ backgroundColor: "transparent", border: "solid rgb(0,0,0,0.5) 1px" }}
                         >
                             <div className={Styles.imageContainer}>
                                 <Image
@@ -79,7 +79,7 @@ const SliderCert_ = () => {
                         <div
                             className={Styles.item}
                             key={`sli_${index}`}
-                            style={{ backgroundColor: "transparent", border: "solid white 1px" }}
+                            style={{ backgroundColor: "transparent", border: "solid rgb(0,0,0,0.5) 1px" }}
                         >
                             <div className={Styles.imageContainer}>
                                 <Image

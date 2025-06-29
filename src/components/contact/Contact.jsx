@@ -12,19 +12,17 @@ export default function Contact() {
     const icons = [
         {
             icon: <FaGithub />,
+            linkName: "Github",
             link: "",
             color: "#ffffff",
         },
         {
             icon: <FaLinkedin />,
+            linkName: "Linkedin",
             link: "https://linkedin.com/in/yourname",
             color: "#ffffff",
         },
-        {
-            icon: <FaEnvelope />,
-            link: "mailto:your@email.com",
-            color: "#ffffff",
-        },
+
 
     ];
 

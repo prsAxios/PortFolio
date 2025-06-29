@@ -13,7 +13,7 @@ const Decs = () => {
     const router = useRouter();
 
     const param =
-        "Hi, I’m Pradeep — an MCA student who enjoys building full-stack applications that are fast, reliable, and easy to maintain. I work across frontend interfaces, backend logic, SQL databases, and also care about SEO and performance to create digital solutions that are both functional and discoverable.";
+        "Hi, I’m Pradeep, an MCA student who enjoys building full-stack applications that are fast, reliable, and easy to maintain. I work across frontend interfaces, backend logic, SQL databases, and also care about SEO and performance to create digital solutions that are both functional and discoverable.";
 
     return (
         <div ref={containerRef} className={styles.dec}>

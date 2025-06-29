@@ -45,7 +45,7 @@ const Header = () => {
             <div className={style.header}>
                 <div className={style.logo}>
                     <a href="/pradeep_suthar_resume.pdf" download target="_blank" rel="noopener noreferrer">
-                        <p className={style.copyright}><Download /></p>
+                        <p className={style.download}><Download /></p>
                     </a>
                     <div className={style.name}>
                         <p className={style.codeby}>Download</p>
