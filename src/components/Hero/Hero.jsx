@@ -57,7 +57,7 @@ const Hero = () => {
                 <div ref={slider} className={style.slider}>
                     <div ref={firstImages} className={style.imageSet}>
                         <img
-                            src="/images/others/css.svg"
+                            src="/icons/css.svg"
                             alt="CSS"
                             width="50"
                             height="50"
@@ -68,7 +68,7 @@ const Hero = () => {
                             }}
                         />
                         <img
-                            src="/images/others/javascript.svg"
+                            src="/icons/javascript.svg"
                             alt="JavaScript"
                             width="50"
                             height="50"
@@ -90,7 +90,7 @@ const Hero = () => {
                             }}
                         />
                         <img
-                            src="/images/others/next.svg"
+                            src="/icons/next.svg"
                             alt="Next.js"
                             width="50"
                             height="50"
@@ -101,7 +101,7 @@ const Hero = () => {
                             }}
                         />
                         <img
-                            src="/images/others/tailwind.svg"
+                            src="/icons/tailwind.svg"
                             alt="Tailwind CSS"
                             width="50"
                             height="50"
@@ -114,7 +114,7 @@ const Hero = () => {
                     </div>
                     <div ref={secondImages} className={style.imageSet}>
                         <img
-                            src="/images/others/css.svg"
+                            src="/icons/css.svg"
                             alt="CSS"
                             width="50"
                             height="50"
@@ -125,7 +125,7 @@ const Hero = () => {
                             }}
                         />
                         <img
-                            src="/images/others/javascript.svg"
+                            src="/icons/javascript.svg"
                             alt="JavaScript"
                             width="50"
                             height="50"
@@ -136,7 +136,7 @@ const Hero = () => {
                             }}
                         />
                         <img
-                            src="/images/others/sass.svg"
+                            src="/icons/sass.svg"
                             alt="SASS"
                             width="50"
                             height="50"
@@ -147,7 +147,7 @@ const Hero = () => {
                             }}
                         />
                         <img
-                            src="/images/others/next.svg"
+                            src="/icons/next.svg"
                             alt="Next.js"
                             width="50"
                             height="50"
@@ -158,7 +158,7 @@ const Hero = () => {
                             }}
                         />
                         <img
-                            src="/images/others/tailwind.svg"
+                            src="/icons/tailwind.svg"
                             alt="Tailwind CSS"
                             width="50"
                             height="50"
