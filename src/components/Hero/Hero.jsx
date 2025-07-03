@@ -79,7 +79,7 @@ const Hero = () => {
                             }}
                         />
                         <img
-                            src="/images/others/sass.svg"
+                            src="/icons/sass.svg"
                             alt="SASS"
                             width="50"
                             height="50"
