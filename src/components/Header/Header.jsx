@@ -6,6 +6,7 @@ import { AnimatePresence } from "framer-motion";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Download } from "lucide-react";
+import Link from "next/link";
 
 const Header = () => {
     const [isActive, setIsActive] = useState(false);
@@ -40,6 +41,8 @@ const Header = () => {
     const toggleMenu = () => {
         setMenu((prev) => !prev);
     };
+
+
     return (
         <>
             <div className={style.header}>
@@ -64,18 +67,18 @@ const Header = () => {
                     </AnimatePresence>
 
                     <div className={`${style.nav} ${isMenu ? style.shownav : ""}`}>
-                        <div className={style.el}>
-                            <p>Work</p>
-                            <div className={style.endicator}></div>
-                        </div>
-                        <div className={style.el}>
+
+
+                        <Link href="/about" className={style.el}>
                             <p>About</p>
                             <div className={style.endicator}></div>
-                        </div>
-                        <div className={style.el}>
+                        </Link>
+
+                        <Link href="/cont2act" className={style.el}>
                             <p>Contact</p>
                             <div className={style.endicator}></div>
-                        </div>
+                        </Link>
+
                     </div>
                 </div>
 

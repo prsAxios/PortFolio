@@ -1,0 +1,87 @@
+"use client";
+
+import style from "./hero.module.scss";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import GlossyText from "../glossyText";
+
+const Hero = () => {
+    const firstImages = useRef(null);
+    const secondImages = useRef(null);
+    const slider = useRef(null);
+    const dirRef = useRef(1);
+    let x_axis_perc = 0;
+
+    useEffect(() => {
+
+        if (firstImages.current && secondImages.current && slider.current) {
+            gsap.registerPlugin(ScrollTrigger);
+            requestAnimationFrame(animation);
+        }
+
+        gsap.to(slider.current, {
+            scrollTrigger: {
+                trigger: document.documentElement,
+                start: 0,
+                end: window.innerHeight,
+                scrub: 0.25,
+                onUpdate: (e) => {
+                    dirRef.current = e.direction * -1;
+                },
+            },
+            x: "-300px",
+        });
+
+
+    },);
+
+    const animation = () => {
+        if (x_axis_perc <= -100) {
+            x_axis_perc = 0;
+        }
+        if (x_axis_perc > 0) {
+            x_axis_perc = -100;
+        }
+        x_axis_perc += 0.2 * dirRef.current;
+        gsap.set(firstImages.current, { xPercent: x_axis_perc });
+        gsap.set(secondImages.current, { xPercent: x_axis_perc });
+        requestAnimationFrame(animation);
+    }
+
+    return (
+        <main className={style.mainHero}>
+            <div className={style.sliderContainer}>
+                <div ref={slider} className={style.slider}>
+                    <div ref={firstImages} className={style.imageSet}>
+                        <img src="/images/others/css.svg" alt="CSS" />
+                        <img src="/images/others/javascript.svg" alt="JavaScript" />
+                        <img src="/images/others/sass.svg" alt="SASS" />
+                        <img src="/images/others/next.svg" alt="Next.js" />
+                        <img src="/images/others/tailwind.svg" alt="Tailwind CSS" />
+                    </div>
+                    <div ref={secondImages} className={style.imageSet}>
+                        <img src="/images/others/css.svg" alt="CSS" />
+                        <img src="/images/others/javascript.svg" alt="JavaScript" />
+                        <img src="/images/others/sass.svg" alt="SASS" />
+                        <img src="/images/others/next.svg" alt="Next.js" />
+                        <img src="/images/others/tailwind.svg" alt="Tailwind CSS" />
+                    </div>
+                </div>
+            </div>
+
+            <div className={style.heroText}>
+                <p>Pradeep<br />Suthar</p>
+            </div>
+
+            <div data-scroll data-scroll-speeed={0.1} className={`${style.description}`}>
+                <p>
+                    A <b>Frontend Developer</b><br />focused on performance, UX, and SEO
+                </p>
+                {/* <GlossyText text={"Full stack developer"} /> */}
+            </div>
+        </main>
+    )
+}
+
+export default Hero;

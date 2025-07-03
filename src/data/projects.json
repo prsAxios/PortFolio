@@ -111,12 +111,12 @@
       "Light and dark mode support for better UX."
     ],
     "tools_used": {
-      "frontend": ["Next.js", "React.js", "TypeScript", "Tailwind CSS"],
-      "backend": ["Node.js", "Express.js", "MongoDB", "Mongoose"],
-      "auth": ["NextAuth", "JWT"],
-      "real_time": ["Ably"],
-      "visualization": ["RDKit.js"],
-      "api_integrations": ["NVIDIA AI API"]
+      "Frontend": ["Next.js", "React.js", "TypeScript", "Tailwind CSS"],
+      "Backend": ["Node.js", "Express.js", "MongoDB", "Mongoose"],
+      "Auth": ["NextAuth", "JWT"],
+      "Real_time": ["Ably"],
+      "Visualization": ["RDKit.js"],
+      "Api_integrations": ["NVIDIA AI API"]
     },
     "outcome": [
       "Enabled browser-based molecular generation and visualization for researchers.",
@@ -179,10 +179,10 @@
       "Low transaction fees compared to traditional gateways."
     ],
     "tools_used": {
-      "frontend": ["React.js"],
-      "backend": ["Node.js", "Express.js", "MongoDB"],
-      "blockchain": ["Solidity", "Ethereum", "Web3.js", "Truffle"],
-      "wallet": ["MetaMask"]
+      "Frontend": ["React.js"],
+      "Backend": ["Node.js", "Express.js", "MongoDB"],
+      "Blockchain": ["Solidity", "Ethereum", "Web3.js", "Truffle"],
+      "Wallet": ["MetaMask"]
     },
     "outcome": [
       "Created a secure and transparent crypto payment solution.",
@@ -244,10 +244,10 @@
       "HIPAA-conscious privacy implementation using Privy."
     ],
     "tools_used": {
-      "frontend": ["Next.js", "React.js", "TypeScript", "Tailwind CSS"],
-      "backend": ["Drizzle ORM", "Neon Database"],
-      "ai": ["Gemini AI"],
-      "privacy": ["Privy"]
+      "Frontend": ["Next.js", "React.js", "TypeScript", "Tailwind CSS"],
+      "Backend": ["Drizzle ORM", "Neon Database"],
+      "AI": ["Gemini AI"],
+      "Privacy": ["Privy"]
     },
     "outcome": [
       "Improved early detection opportunities through AI-driven screening gap analysis.",
@@ -307,9 +307,9 @@
       "SEO-optimized structure and fast-loading architecture."
     ],
     "tools_used": {
-      "frontend": ["React.js", "Next.js", "TypeScript", "Tailwind CSS"],
-      "animation": ["GSAP", "Framer Motion"],
-      "performance": ["Next.js SSG", "Lazy Loading"]
+      "Frontend": ["React.js", "Next.js", "TypeScript", "Tailwind CSS"],
+      "Animation": ["GSAP", "Framer Motion"],
+      "Performance": ["Next.js SSG", "Lazy Loading"]
     },
     "outcome": [
       "Successfully delivered a visually-rich developer portfolio that stands out in the crowd.",

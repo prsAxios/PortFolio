@@ -103,6 +103,7 @@ const index = () => {
                             slug={project.slug}
                             manageModal={manageModal}
                             onProjectClick={handleProjectClick}
+                            ref={React.createRef()}
                         />
                     )
                 })}

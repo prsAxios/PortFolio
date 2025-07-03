@@ -164,7 +164,6 @@
             .card {
                 flex: 1 1 45%;
                 background-color: transparent;
-                border: 1px solid rgb(141, 141, 141);
                 padding: 1rem;
                 transition: transform 0.2s ease;
 
@@ -221,7 +220,7 @@
         display: inline-flex;
         flex-wrap: wrap;
         padding: 1rem;
-        border: solid 1px rgb(0, 0, 0);
+        // border: solid 1px rgb(0, 0, 0);
         margin-left: 1rem;
 
         li {
@@ -232,7 +231,7 @@
             font-size: 0.9rem;
             transition: transform 0.2s ease;
             list-style: none;
-            border: solid rgb(0, 0, 0) 1px;
+            // border: solid rgb(0, 0, 0) 1px;
             margin-left: 1rem;
 
 

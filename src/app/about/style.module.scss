@@ -132,3 +132,11 @@ $xl: 1536px;
         gap: 1rem;
     }
 }
+
+@media (max-width:$sm) {
+    .About {
+        padding: 0.5rem;
+
+    }
+
+}

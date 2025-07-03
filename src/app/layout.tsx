@@ -3,7 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header/Header";
 import Contact from "@/components/contact/Contact";
 import { Plus_Jakarta_Sans } from "next/font/google";
-import CustomCursor from "../components/CustomCursor";
+// import CustomCursor from "../components/CustomCursor";
 
 const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -30,7 +30,7 @@ export default function RootLayout({
         className={jakarta.className}
       >
         <Header />
-        <CustomCursor />
+        {/* <CustomCursor /> */}
         <main className="main-wrapper">
           {children}
         </main>

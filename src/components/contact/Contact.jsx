@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import Link from 'next/link';
 
 
 export default function Contact() {
@@ -32,13 +33,7 @@ export default function Contact() {
             <div className={styles.body}>
                 <div className={styles.title}>
                     <span>
-                        <div className={styles.imageContainer}>
-                            <Image
-                                fill={true}
-                                alt={"image"}
-                                src={`/contact.svg`}
-                            />
-                        </div>
+
                         <h2>Contact</h2>
                     </span>
 
@@ -72,7 +67,8 @@ export default function Contact() {
                     <div>
                         <span>
                             <h3>Created by</h3>
-                            <p>Pradeep Suthar</p>
+                            <p className={styles.link}><Link style={{ textDecoration: "none", color: "black" }} href="https://pradeepsuthar.vercel.app/">@PradeepSuthar</Link></p>
+
                         </span>
 
                     </div>
