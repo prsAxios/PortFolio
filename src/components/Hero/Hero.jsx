@@ -33,6 +33,8 @@ const Hero = () => {
             x: "-300px",
         });
 
+        return () => ScrollTrigger.killAll();
+
 
     },);
 
@@ -70,16 +72,33 @@ const Hero = () => {
                 </div>
             </div>
 
-            <div className={style.heroText}>
+
+            {/* <div className={style.main_container}> */}
+            <div data-scroll data-scroll-speeed={0.1} className={`${style.heroText}`}>
                 <p>Pradeep<br />Suthar</p>
             </div>
-
+            {/* <img src="/images/Hero/right.png" alt="hero"
+                style={{
+                    position: "absolute",
+                    top: "50%",
+                    left: "50%",
+                    width: "700px",
+                    height: "auto",
+                    transform: "translate(-50%, -50%)",
+                }}
+            /> */}
             <div data-scroll data-scroll-speeed={0.1} className={`${style.description}`}>
                 <p>
                     A <b>Frontend Developer</b><br />focused on performance, UX, and SEO
                 </p>
                 {/* <GlossyText text={"Full stack developer"} /> */}
             </div>
+            {/* </div> */}
+
+
+
+
+
         </main>
     )
 }

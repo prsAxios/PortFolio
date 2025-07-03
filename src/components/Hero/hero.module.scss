@@ -101,6 +101,10 @@
     background-color: transparent;
     z-index: 50;
 
+    .main_container {
+        display: flex;
+    }
+
     .heroText {
         flex: 1;
         display: flex;
