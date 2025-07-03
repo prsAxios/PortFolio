@@ -5,6 +5,7 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import GlossyText from "../glossyText";
+import Image from 'next/image';
 
 const Hero = () => {
     const firstImages = useRef(null);
@@ -56,18 +57,78 @@ const Hero = () => {
             <div className={style.sliderContainer}>
                 <div ref={slider} className={style.slider}>
                     <div ref={firstImages} className={style.imageSet}>
-                        <img src="/images/others/css.svg" alt="CSS" />
-                        <img src="/images/others/javascript.svg" alt="JavaScript" />
-                        <img src="/images/others/sass.svg" alt="SASS" />
-                        <img src="/images/others/next.svg" alt="Next.js" />
-                        <img src="/images/others/tailwind.svg" alt="Tailwind CSS" />
+                        <Image
+                            src="/images/others/css.svg"
+                            alt="CSS"
+                            width={50}
+                            height={50}
+                            priority
+                        />
+                        <Image
+                            src="/images/others/javascript.svg"
+                            alt="JavaScript"
+                            width={50}
+                            height={50}
+                            priority
+                        />
+                        <Image
+                            src="/images/others/sass.svg"
+                            alt="SASS"
+                            width={50}
+                            height={50}
+                            priority
+                        />
+                        <Image
+                            src="/images/others/next.svg"
+                            alt="Next.js"
+                            width={50}
+                            height={50}
+                            priority
+                        />
+                        <Image
+                            src="/images/others/tailwind.svg"
+                            alt="Tailwind CSS"
+                            width={50}
+                            height={50}
+                            priority
+                        />
                     </div>
                     <div ref={secondImages} className={style.imageSet}>
-                        <img src="/images/others/css.svg" alt="CSS" />
-                        <img src="/images/others/javascript.svg" alt="JavaScript" />
-                        <img src="/images/others/sass.svg" alt="SASS" />
-                        <img src="/images/others/next.svg" alt="Next.js" />
-                        <img src="/images/others/tailwind.svg" alt="Tailwind CSS" />
+                        <Image
+                            src="/images/others/css.svg"
+                            alt="CSS"
+                            width={50}
+                            height={50}
+                            priority
+                        />
+                        <Image
+                            src="/images/others/javascript.svg"
+                            alt="JavaScript"
+                            width={50}
+                            height={50}
+                            priority
+                        />
+                        <Image
+                            src="/images/others/sass.svg"
+                            alt="SASS"
+                            width={50}
+                            height={50}
+                            priority
+                        />
+                        <Image
+                            src="/images/others/next.svg"
+                            alt="Next.js"
+                            width={50}
+                            height={50}
+                            priority
+                        />
+                        <Image
+                            src="/images/others/tailwind.svg"
+                            alt="Tailwind CSS"
+                            width={50}
+                            height={50}
+                            priority
+                        />
                     </div>
                 </div>
             </div>
@@ -79,7 +140,7 @@ const Hero = () => {
             <div data-scroll data-scroll-speeed={0.1} className={`${style.heroText}`}>
                 <p>Pradeep<br />Suthar</p>
             </div>
-            <img src="/images/Hero/hero_2.png" alt="hero"
+            {/* <img src="/images/others/hero_2.png" alt="hero"
                 style={{
                     position: "absolute",
                     top: "50%",
@@ -87,8 +148,9 @@ const Hero = () => {
                     width: "700px",
                     height: "auto",
                     transform: "translate(-50%, -50%)",
+                    filter: "grayscale(100%)",
                 }}
-            />
+            /> */}
             <div data-scroll data-scroll-speeed={0.1} className={`${style.description}`}>
                 <p>
                     A <b>Frontend Developer</b><br />focused on performance, UX, and SEO
