@@ -5,7 +5,6 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import GlossyText from "../glossyText";
-import Image from 'next/image';
 
 const Hero = () => {
     const firstImages = useRef(null);
@@ -57,77 +56,117 @@ const Hero = () => {
             <div className={style.sliderContainer}>
                 <div ref={slider} className={style.slider}>
                     <div ref={firstImages} className={style.imageSet}>
-                        <Image
+                        <img
                             src="/images/others/css.svg"
                             alt="CSS"
-                            width={50}
-                            height={50}
-                            priority
+                            width="50"
+                            height="50"
+                            style={{
+                                objectFit: 'contain',
+                                minWidth: '50px',
+                                minHeight: '50px',
+                            }}
                         />
-                        <Image
+                        <img
                             src="/images/others/javascript.svg"
                             alt="JavaScript"
-                            width={50}
-                            height={50}
-                            priority
+                            width="50"
+                            height="50"
+                            style={{
+                                objectFit: 'contain',
+                                minWidth: '50px',
+                                minHeight: '50px',
+                            }}
                         />
-                        <Image
+                        <img
                             src="/images/others/sass.svg"
                             alt="SASS"
-                            width={50}
-                            height={50}
-                            priority
+                            width="50"
+                            height="50"
+                            style={{
+                                objectFit: 'contain',
+                                minWidth: '50px',
+                                minHeight: '50px',
+                            }}
                         />
-                        <Image
+                        <img
                             src="/images/others/next.svg"
                             alt="Next.js"
-                            width={50}
-                            height={50}
-                            priority
+                            width="50"
+                            height="50"
+                            style={{
+                                objectFit: 'contain',
+                                minWidth: '50px',
+                                minHeight: '50px',
+                            }}
                         />
-                        <Image
+                        <img
                             src="/images/others/tailwind.svg"
                             alt="Tailwind CSS"
-                            width={50}
-                            height={50}
-                            priority
+                            width="50"
+                            height="50"
+                            style={{
+                                objectFit: 'contain',
+                                minWidth: '50px',
+                                minHeight: '50px',
+                            }}
                         />
                     </div>
                     <div ref={secondImages} className={style.imageSet}>
-                        <Image
+                        <img
                             src="/images/others/css.svg"
                             alt="CSS"
-                            width={50}
-                            height={50}
-                            priority
+                            width="50"
+                            height="50"
+                            style={{
+                                objectFit: 'contain',
+                                minWidth: '50px',
+                                minHeight: '50px',
+                            }}
                         />
-                        <Image
+                        <img
                             src="/images/others/javascript.svg"
                             alt="JavaScript"
-                            width={50}
-                            height={50}
-                            priority
+                            width="50"
+                            height="50"
+                            style={{
+                                objectFit: 'contain',
+                                minWidth: '50px',
+                                minHeight: '50px',
+                            }}
                         />
-                        <Image
+                        <img
                             src="/images/others/sass.svg"
                             alt="SASS"
-                            width={50}
-                            height={50}
-                            priority
+                            width="50"
+                            height="50"
+                            style={{
+                                objectFit: 'contain',
+                                minWidth: '50px',
+                                minHeight: '50px',
+                            }}
                         />
-                        <Image
+                        <img
                             src="/images/others/next.svg"
                             alt="Next.js"
-                            width={50}
-                            height={50}
-                            priority
+                            width="50"
+                            height="50"
+                            style={{
+                                objectFit: 'contain',
+                                minWidth: '50px',
+                                minHeight: '50px',
+                            }}
                         />
-                        <Image
+                        <img
                             src="/images/others/tailwind.svg"
                             alt="Tailwind CSS"
-                            width={50}
-                            height={50}
-                            priority
+                            width="50"
+                            height="50"
+                            style={{
+                                objectFit: 'contain',
+                                minWidth: '50px',
+                                minHeight: '50px',
+                            }}
                         />
                     </div>
                 </div>
