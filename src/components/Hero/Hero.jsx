@@ -192,7 +192,7 @@ const Hero = () => {
             /> */}
             <div data-scroll data-scroll-speeed={0.1} className={`${style.description}`}>
                 <p>
-                    A <b>Frontend Developer</b><br />focused on performance, UX, and SEO
+                    A <b>Software Developer</b><br />focused on performance, UX, and SEO
                 </p>
                 {/* <GlossyText text={"Full stack developer"} /> */}
                 {/* seo */}

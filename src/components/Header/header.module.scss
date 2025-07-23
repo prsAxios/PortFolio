@@ -23,14 +23,18 @@
     display: flex;
     padding: 0 25px;
     justify-content: space-between;
+    // box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 
     width: 100%;
     box-sizing: border-box;
 
 
     .navContainer {
+
+
         .menuName p {
             font-size: 18px;
+
         }
 
         .MenuEndicator {

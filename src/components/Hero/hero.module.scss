@@ -98,7 +98,7 @@
     height: 110vh;
     overflow: hidden;
     align-items: start;
-    background-color: transparent;
+    // background: linear-gradient(rgba(68, 134, 255, 0.5), rgba(230, 230, 230, 0.5));
     z-index: 50;
 
     .main_container {
@@ -118,6 +118,8 @@
         p {
             justify-content: center;
             text-align: end;
+            font-weight: 600;
+            text-transform: uppercase;
         }
     }
 

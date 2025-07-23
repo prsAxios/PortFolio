@@ -20,6 +20,7 @@ html {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   cursor: none;
+  color: black !important;
 }
 
 .main-wrapper {

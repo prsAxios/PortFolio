@@ -45,6 +45,7 @@ const Header = () => {
 
     return (
         <>
+
             <div className={style.header}>
                 <div className={style.logo}>
                     <a href="/pradeep_suthar_resume.pdf" download target="_blank" rel="noopener noreferrer">
@@ -74,7 +75,7 @@ const Header = () => {
                             <div className={style.endicator}></div>
                         </Link>
 
-                        <Link href="/cont2act" className={style.el}>
+                        <Link href="/contact" className={style.el}>
                             <p>Contact</p>
                             <div className={style.endicator}></div>
                         </Link>
@@ -98,6 +99,8 @@ const Header = () => {
 
                 <AnimatePresence mode="exit">{isActive && <Navbar />}</AnimatePresence>
             </div>
+
+
         </>
     );
 };
