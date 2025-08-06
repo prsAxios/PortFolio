@@ -237,8 +237,13 @@
         .rightSection {
             .description {
                 font-size: clamp(0.9rem, 4vw, 1.2rem);
+                z-index: 100;
             }
         }
+    }
+
+    .animatedLines {
+        z-index: 0;
     }
 }
 
