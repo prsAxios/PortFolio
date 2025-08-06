@@ -10,7 +10,6 @@ $xl: 1536px;
     display: flex;
     flex-direction: column;
     background-color: transparent;
-    color: rgb(0, 0, 0) !important;
     padding: 8px;
 
 
@@ -31,7 +30,6 @@ $xl: 1536px;
 
         p {
             font-size: 1vw;
-            color: rgb(0, 0, 0) !important;
             flex: 1;
             display: flex;
             align-items: center;
@@ -87,7 +85,6 @@ $xl: 1536px;
 
             p {
                 font-size: 1vw;
-                color: rgb(0, 0, 0);
                 flex: 1;
                 display: flex;
                 align-items: center;

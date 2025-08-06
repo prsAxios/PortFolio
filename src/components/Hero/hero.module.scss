@@ -1,171 +1,317 @@
-@media (max-width:1020px) {
-    .mainHero {}
-
-    .description {
-        font-size: 1.3rem !important;
-    }
-
-    .description svg {
-        margin-bottom: 20px !important;
-    }
-}
-
-@media (max-width:750px) {
-    .sliderContainer {
-        top: calc(100vh - 360px) !important;
-    }
-
-    .slider {
-        .imageSet {
-            img {
-                height: 100px !important;
-                width: 100px !important;
-            }
-
-            &:nth-of-type(2) {
-                left: calc(100% + 6rem) !important;
-            }
-        }
-    }
-
-    .description {
-        top: calc(100vh - 140px) !important;
-        left: 10% !important;
-    }
-}
-
-@media (max-width:600px) {
-    .sliderContainer {
-        top: calc(100vh - 300px) !important;
-    }
-
-    .mainHero img {
-        top: 5% !important;
-        height: 90% !important;
-        width: 90% !important;
-        transform: scale(1.5) !important;
-    }
-
-    .mainHero {
-        .heroText {
-            p {
-                font-size: 10vw;
-            }
-        }
-    }
-
-    .slider {
-        .imageSet {
-            img {
-                height: 80px !important;
-                width: 80px !important;
-            }
-
-            &:nth-of-type(2) {
-                left: calc(100% + 4rem) !important;
-            }
-        }
-    }
-}
-
-@media (max-width:390px) {
-    .sliderContainer {
-        top: calc(100vh - 150px) !important;
-    }
-
-    .slider {
-        .imageSet {
-            img {
-                height: 70px !important;
-                width: 70px !important;
-            }
-
-            &:nth-of-type(2) {
-                left: calc(100% + 3rem) !important;
-            }
-        }
-    }
-
-    .description {
-        top: calc(100vh - 90px) !important;
-        left: 10% !important;
-    }
-}
+@import '../../styles/breakpoints';
 
 .mainHero {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; // Left, Center (image), Right
     position: relative;
-    height: 110vh;
+    height: 100vh;
     overflow: hidden;
-    align-items: start;
-    // background: linear-gradient(rgba(68, 134, 255, 0.5), rgba(230, 230, 230, 0.5));
+    align-items: center;
     z-index: 50;
+    padding: 2rem;
+    gap: 2rem;
 
-    .main_container {
+    // Left Section - Name
+    .leftSection {
         display: flex;
-    }
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
 
-    .heroText {
-        flex: 1;
-        display: flex;
-        align-items: center;
-        justify-content: end;
-        font-size: 7vw;
-        height: 70%;
-        padding: 0.5rem;
-        line-height: 0.8;
+        .nameContainer {
+            position: relative;
 
-        p {
-            justify-content: center;
-            text-align: end;
-            font-weight: 600;
-            text-transform: uppercase;
-        }
-    }
+            .name {
+                font-size: clamp(2rem, 6vw, 4rem);
+                font-weight: 600;
+                text-transform: uppercase;
+                margin: 0;
+                padding: 0;
+                line-height: 0.8;
+                letter-spacing: -0.05em;
+            }
 
-    .description {
-        flex: 1;
-        display: flex;
-        align-items: center;
-        justify-content: start;
-        padding: 0.5rem;
-        font-size: 2vw;
-        height: 70%;
-    }
-}
+            .bouncingCircle,
+            .bouncingCircle2 {
+                position: absolute;
+                animation: bounce 2s infinite;
 
-.sliderContainer {
-    position: absolute;
-    top: calc(100vh - 250px);
-}
+                &.bouncingCircle {
+                    top: -10px;
+                    left: -20px;
+                    animation-delay: 0s;
+                }
 
-.slider {
-    position: relative;
-    display: flex;
-    gap: 5rem;
-
-    .imageSet {
-        position: relative;
-        display: flex;
-        align-items: center;
-        gap: 10rem;
-        padding-right: 50px;
-
-        &:nth-of-type(2) {
-            position: absolute;
-            left: calc(100% + 20rem);
-        }
-
-        img {
-            height: 150px;
-            width: 150px;
-            object-fit: contain;
-            filter: grayscale(100%);
-            transition: filter 0.3s ease;
-
-            &:hover {
-                filter: grayscale(0%);
+                &.bouncingCircle2 {
+                    bottom: -10px;
+                    right: -20px;
+                    animation-delay: 1s;
+                }
             }
         }
+    }
+
+    // Center Section - Image
+    .centerSection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        .imageContainer {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .heroImage {
+                border-radius: 20px;
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+                transition: transform 0.3s ease;
+                object-fit: cover;
+
+                &:hover {
+                    transform: scale(1.02);
+                }
+            }
+
+            .imageDecoration {
+                position: absolute;
+                pointer-events: none;
+
+                .decorCircle {
+                    position: absolute;
+                    top: -30px;
+                    right: -30px;
+                    width: 60px;
+                    height: 60px;
+                    border: 2px solid rgba(255, 255, 255, 0.5);
+                    border-radius: 50%;
+                    animation: rotate 10s linear infinite;
+                }
+
+                .decorLine {
+                    position: absolute;
+                    bottom: -20px;
+                    left: -40px;
+                    width: 80px;
+                    height: 2px;
+                    background: linear-gradient(90deg, transparent, white, transparent);
+                    animation: pulse 3s ease-in-out infinite;
+                }
+            }
+        }
+    }
+
+    // Right Section - Description
+    .rightSection {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        text-align: right;
+
+        .description {
+            font-size: clamp(1rem, 3vw, 1.5rem);
+            font-weight: 400;
+            line-height: 1.4;
+            letter-spacing: -0.02em;
+
+            span {
+                display: block;
+                margin-bottom: 0.5rem;
+
+                b {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+
+// Animations
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-10px);
+    }
+
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 0.5;
+        transform: scaleX(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scaleX(1.2);
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .mainHero {
+        .centerSection {
+            .imageContainer {
+                .heroImage {
+                    width: 500px !important; // Adjust as needed
+                    height: 650px !important; // Adjust as needed
+                }
+            }
+        }
+    }
+}
+
+// Responsive Design
+@media (max-width: 1024px) {
+    .mainHero {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        text-align: center;
+        gap: 3rem;
+
+        .leftSection {
+            align-items: center;
+            order: 1;
+        }
+
+        .centerSection {
+            order: 2;
+        }
+
+        .rightSection {
+            align-items: center;
+            text-align: center;
+            order: 3;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .mainHero {
+        padding: 1rem;
+        gap: 2rem;
+
+        .centerSection {
+            .imageContainer {
+                .heroImage {
+                    width: 300px !important;
+                    height: 375px !important;
+                }
+            }
+        }
+
+        .leftSection {
+            .nameContainer {
+                .name {
+                    font-size: clamp(1.5rem, 8vw, 3rem);
+                }
+            }
+        }
+
+        .rightSection {
+            .description {
+                font-size: clamp(0.9rem, 4vw, 1.2rem);
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .mainHero {
+        gap: 1.5rem;
+
+        .centerSection {
+            .imageContainer {
+                .heroImage {
+                    width: 250px !important;
+                    height: 300px !important;
+                }
+
+                .imageDecoration {
+                    display: none; // Hide decorations on very small screens
+                }
+            }
+        }
+    }
+}
+
+// Animated Lines (keeping your existing styles)
+.animatedLines {
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.animatedLine {
+    width: 100%;
+    background: black;
+    margin-bottom: 2px;
+    transform-origin: bottom;
+    transform: translateY(0);
+    will-change: transform, opacity;
+    opacity: 1;
+    transition: all 0.7s ease-out;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.decorativeLines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.decorativeLine {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #374151;
+    opacity: 0.2;
+    transform: translateX(-100%);
+    animation: slideIn 3s ease-in-out infinite alternate;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
     }
 }

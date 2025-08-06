@@ -59,7 +59,7 @@ const Header = () => {
 
                 <div className={style.navContainer}>
                     <div className={`${style.menuName}`} onClick={toggleMenu}>
-                        <p>Menu</p>
+                        <p style={{ color: "white" }}>Menu</p>
                         <div className={style.MenuEndicator}></div>
                     </div>
 

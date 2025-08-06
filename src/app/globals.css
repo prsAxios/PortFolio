@@ -1,18 +1,16 @@
 :root {
-  --font-anton: "General Sans", sans-serif
-
+  --font-anton: "General Sans", sans-serif;
+  --text-color: #ffffff;
+  --background-color: #000000;
 }
-/* 
-body, html, * {
-  cursor: none !important;
-} */
 
 body {
-  margin : 0px;
-  background-color: rgb(255, 255, 255);
+  margin: 0px;
+  background-color: var(--background-color);
+  color: var(--text-color);
   font-family: var(--font-anton);
   overflow: hidden;
-
+  cursor: default;
 }
 
 html {
@@ -20,12 +18,15 @@ html {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   cursor: none;
-  color: black !important;
+  color: var(--text-color) !important;
+  background-color: var(--background-color);
 }
 
 .main-wrapper {
   padding-top: 90px;
   min-height: 100vh;
+  color: var(--text-color);
+  background-color: var(--background-color);
 }
 
 @media(max-width:600px) {
@@ -35,14 +36,13 @@ html {
   }
 }
 
-
 .custom-cursor {
   position: fixed;
   top: 0;
   left: 0;
   width: 10px;
   height: 10px;
-  background-color: black;
+  background-color: var(--text-color);
   border-radius: 50%;
   pointer-events: none;
   z-index: 9999;
