@@ -51,10 +51,10 @@ const Header = () => {
                     <a href="/pradeep_suthar_resume.pdf" download target="_blank" rel="noopener noreferrer">
                         <p className={style.download}><Download /></p>
                     </a>
-                    <div className={style.name}>
+                    {/* <div className={style.name}>
                         <p className={style.codeby}>Download</p>
                         <p className={style.pradeep}>Resume</p>
-                    </div>
+                    </div> */}
                 </div>
 
                 <div className={style.navContainer}>
