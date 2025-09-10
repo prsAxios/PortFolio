@@ -24,7 +24,7 @@ const HorizontalScroll = () => {
 
     if (!project) return notFound();
 
-    const { id, project_name, image_1, image_2, image_3, project_type, tech_stack, challenge, solution, responsibilities, highlight_features, tools_used, outcome, keywords, links } = project;
+    const { id, project_name, image_1, image_2, image_3, tech_stack, solution, responsibilities, highlight_features, tools_used, outcome, links } = project;
 
     const textRef = useRef(null);
 

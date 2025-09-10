@@ -45,50 +45,15 @@ const Hero = () => {
 
     return (
         <main className={style.mainHero}>
-            {/* Left Section - Name and Title */}
-            <div className={style.leftSection}>
+            <div className={style.centeredContent}>
                 <div className={style.nameContainer}>
-                    <div className={style.bouncingCircle}>
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="12" cy="12" r="10" fill="white" />
-                        </svg>
-                    </div>
-                    <div className={style.bouncingCircle2}>
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="12" cy="12" r="10" fill="white" />
-                        </svg>
-                    </div>
                     <h1 className={style.name}>
-                        Pradeep <br /> Suthar
+                        Pradeep Suthar
                     </h1>
-                </div>
-            </div>
-
-            {/* Center Section - Your Image */}
-            <div className={style.centerSection}>
-                <div className={style.imageContainer}>
-                    <Image
-                        src="/images/Hero/right.png" // Replace with your image path
-                        alt="Pradeep Suthar"
-                        width={400}
-                        height={500}
-                        className={style.heroImage}
-                        priority
-                    />
-
-                    {/* Optional: Decorative elements around image */}
-                    <div className={style.imageDecoration}>
-                        <div className={style.decorCircle}></div>
-                        <div className={style.decorLine}></div>
+                    <div className={style.description}>
+                        <span>A <b>Software Developer</b></span>
+                        <span>focused on performance, UX, and SEO</span>
                     </div>
-                </div>
-            </div>
-
-            {/* Right Section - Description */}
-            <div className={style.rightSection}>
-                <div className={style.description}>
-                    <span>A <b>Software Developer</b></span>
-                    <span>focused on performance, UX, and SEO</span>
                 </div>
             </div>
 
@@ -101,7 +66,8 @@ const Hero = () => {
                         className={style.animatedLine}
                         style={{
                             height: `${(index + 1) * 8}px`,
-                            background: `linear-gradient(90deg, #000000 0%, #1a1a1a ${index * 12}%, #000000 100%)`
+                            //I want white lines
+                            background: `linear-gradient(90deg, #ffffff 0%, #ffffff ${index * 12}%, #ffffff 100%)`
                         }}
                     />
                 ))}
