@@ -16,13 +16,13 @@ export default function Contact() {
         {
             icon: <FaGithub />,
             linkName: "Github",
-            link: "",
+            link: "https://github.com/prsAxios",
             color: "#ffffff",
         },
         {
             icon: <FaLinkedin />,
             linkName: "Linkedin",
-            link: "https://linkedin.com/in/yourname",
+            link: "https://www.linkedin.com/in/pradeepsuthar48/",
             color: "#ffffff",
         },
     ];
@@ -115,7 +115,7 @@ export default function Contact() {
                         className={styles.animatedLine}
                         style={{
                             height: `${(index + 1) * 6}px`,
-                            background: `linear-gradient(90deg, #000000 0%, #1a1a1a ${index * 12}%, #000000 100%)`
+                            background: `linear-gradient(90deg, #ffffff 0%, #ffffff ${index * 12}%, #000000 100%)`
                         }}
                     />
                 ))}

@@ -1,50 +1,110 @@
-@media (max-width: 390px) {
-    .slider {
-        display: none !important;
-    }
-
-    .slidingImages {
-        margin-top: 100px !important;
-        margin-bottom: 100px !important;
-    }
-}
+@import '../../styles/breakpoints';
 
 .sliding_Container {
     display: flex;
     flex-direction: column;
-    gap: 3vw;
+    gap: clamp(2vw, 4vw, 6vw);
     position: relative;
-    margin-top: 200px;
-    margin-bottom: 300px;
+    margin-top: clamp(100px, 20vw, 200px);
+    margin-bottom: clamp(150px, 25vw, 300px);
     background-color: transparent !important;
     overflow: hidden;
+    width: 100%;
+    
+    @include respond(xxs) {
+        margin-top: 75px;
+        margin-bottom: 100px;
+        gap: 4vw;
+    }
+    
+    @include respond(xs) {
+        margin-top: 100px;
+        margin-bottom: 125px;
+        gap: 3.5vw;
+    }
 
     .slider {
         display: flex;
         position: relative;
-        gap: 3vw;
+        gap: clamp(2vw, 4vw, 6vw);
         width: 120vw;
         left: -10vw;
         will-change: transform;
-
+        
+        @include respond(xxs) {
+            gap: 4vw;
+            width: 130vw;
+            left: -15vw;
+        }
+        
+        @include respond(xs) {
+            gap: 3.5vw;
+            width: 125vw;
+            left: -12.5vw;
+        }
 
         .item {
-            width: 25%;
-            height: 20vw;
+            width: clamp(20%, 25%, 30%);
+            height: clamp(15vw, 20vw, 25vw);
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-shrink: 0;
+            
+            @include respond(xxs) {
+                width: 30%;
+                height: 25vw;
+            }
+            
+            @include respond(xs) {
+                width: 28%;
+                height: 22vw;
+            }
+            
+            @include respond(sm) {
+                width: 26%;
+                height: 20vw;
+            }
 
             .imageContainer {
                 position: relative;
-                width: 80%;
-                height: 80%;
+                width: 90%;
+                height: 90%;
+                border-radius: 8px;
+                overflow: hidden;
+                
+                @include respond(xxs) {
+                    width: 95%;
+                    height: 95%;
+                }
 
                 img {
                     object-fit: contain;
+                    transition: transform 0.3s ease;
+                    
+                    &:hover {
+                        transform: scale(1.05);
+                        
+                        @include respond(xs) {
+                            transform: none; // Disable hover effects on mobile
+                        }
+                    }
                 }
             }
         }
     }
+}
 
+// Hide slider on very small screens if performance is an issue
+@media (max-width: 350px) {
+    .sliding_Container {
+        .slider {
+            gap: 5vw;
+            
+            .item {
+                width: 35%;
+                height: 30vw;
+            }
+        }
+    }
 }

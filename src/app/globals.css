@@ -2,15 +2,43 @@
   --font-anton: "General Sans", sans-serif;
   --text-color: #ffffff;
   --background-color: #000000;
+  
+  /* Responsive spacing scale */
+  --spacing-xs: clamp(0.5rem, 2vw, 1rem);
+  --spacing-sm: clamp(1rem, 3vw, 2rem);
+  --spacing-md: clamp(2rem, 5vw, 4rem);
+  --spacing-lg: clamp(3rem, 8vw, 6rem);
+  --spacing-xl: clamp(4rem, 10vw, 8rem);
+  
+  /* Responsive font sizes */
+  --font-xs: clamp(0.8rem, 2.5vw, 1rem);
+  --font-sm: clamp(1rem, 3vw, 1.25rem);
+  --font-md: clamp(1.25rem, 4vw, 1.5rem);
+  --font-lg: clamp(1.5rem, 5vw, 2rem);
+  --font-xl: clamp(2rem, 8vw, 3rem);
+  --font-xxl: clamp(3rem, 12vw, 6rem);
+  
+  /* Container max-widths */
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1280px;
+  --container-2xl: 1536px;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
   margin: 0px;
+  padding: 0;
   background-color: var(--background-color);
   color: var(--text-color);
   font-family: var(--font-anton);
-  overflow: hidden;
+  overflow-x: hidden;
   cursor: default;
+  line-height: 1.6;
 }
 
 html {
@@ -20,6 +48,7 @@ html {
   cursor: none;
   color: var(--text-color) !important;
   background-color: var(--background-color);
+  font-size: 16px;
 }
 
 .main-wrapper {
@@ -27,12 +56,36 @@ html {
   min-height: 100vh;
   color: var(--text-color);
   background-color: var(--background-color);
+  width: 100%;
+  overflow-x: hidden;
 }
 
-@media(max-width:600px) {
+/* Mobile First Responsive Design */
+@media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+  
+  .main-wrapper {
+    padding-top: 70px;
+  }
+}
+
+@media (max-width: 768px) {
   .main-wrapper {
     padding-top: 60px;
-    overflow: hidden;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .main-wrapper {
+    padding-top: 80px;
+  }
+}
+
+@media (min-width: 1025px) {
+  html {
+    font-size: 18px;
   }
 }
 
@@ -48,4 +101,15 @@ html {
   z-index: 9999;
   transform: translate(-50%, -50%);
   transition: transform 0.1s ease-out;
+}
+
+/* Hide cursor on touch devices */
+@media (hover: none) and (pointer: coarse) {
+  .custom-cursor {
+    display: none;
+  }
+  
+  html {
+    cursor: default !important;
+  }
 }

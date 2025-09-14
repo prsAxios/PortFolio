@@ -21,7 +21,7 @@ export default function Home() {
 
 
   return (
-    <main data-scroll-container>
+    <main data-scroll-container style={{ width: '100%', overflowX: 'hidden' }}>
       <Hero />
       <Decs />
       <Project />

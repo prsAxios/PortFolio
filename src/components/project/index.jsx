@@ -68,15 +68,19 @@ const index = () => {
     }, []);
 
     const moveItems = (x, y) => {
-        xMoveContainer.current(x);
-        yMoveContainer.current(y);
-        xMoveCursor.current(x);
-        yMoveCursor.current(y);
+        if (window.innerWidth > 768) { // Only enable on larger screens
+            xMoveContainer.current(x);
+            yMoveContainer.current(y);
+            xMoveCursor.current(x);
+            yMoveCursor.current(y);
+        }
     }
 
     const manageModal = (active, index, x, y) => {
-        moveItems(x, y);
-        setModal({ active, index });
+        if (window.innerWidth > 768) { // Only show modal on larger screens
+            moveItems(x, y);
+            setModal({ active, index });
+        }
     }
 
     const handleProjectClick = (slug) => {
@@ -89,7 +93,11 @@ const index = () => {
 
     return (
         <main className={style.projects}
-            onMouseMove={(e) => moveItems(e.clientX, e.clientY)}
+            onMouseMove={(e) => {
+                if (window.innerWidth > 768) {
+                    moveItems(e.clientX, e.clientY);
+                }
+            }}
         >
             <div className={style.body}>
                 <p className={style.projectsTitle}>Projects</p>
